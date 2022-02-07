@@ -1,0 +1,36 @@
+[{
+    "title": "Write like Proust",
+    "color": "#5436da",
+    "sandboxHeader": "Discover Muse trying to match Marcel Proust!",
+    "sampleResponse": "Sample response", 
+    "tags": ["text-generation"],
+    "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/signature_white.svg",
+    "description": "Write like one of the most influential authors of the 20th century.",
+    "model": "orion-fr-v2",
+    "request": {"text": "C'était un temps que je connaissais ; j'eus la sensation et le pressentiment que le jour de l'An n'était pas un jour différent des autres, qu'il n'était pas le premier d'un monde nouveau",
+                "params": {
+                    "mode": "nucleus",
+                    "n_tokens": 50,
+                    "p": 0.9,
+                    "temperature": 1.0
+                    }
+                }
+},{
+    "title": "Eve, the Python Chatbot",
+    "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/chatbot_white.svg",
+    "description": "Get help with Python from the chatbot Eve.", 
+    "color": "#19c37d",
+    "sandboxHeader": "Want to learn more about Python? Ask Muse!",
+    "sampleResponse": "Sample response",
+    "tags": ["chatbot"],
+    "model": "lyra-en",
+    "request": {"text": "Eve is an helpful chatbot knowledgeable about Python.\n\nYou: How do I sort an array?\nEve: You can use the sort() method.\nYou: How do I remove the last element of an array?\nEve:\n",
+                "params": {
+                    "mode": "nucleus",
+                    "n_tokens": 25,
+                    "p": 0.9,
+                    "temperature": 0.9,
+                    "stop_words": [".", "!", "...", "\n\n"]
+                    }
+                }
+}]
