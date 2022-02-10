@@ -93,13 +93,12 @@
     "sampleResponse": "DART, Planetary Defense, Asteroid, Didymos, Moon",
     "tags": ["keywords-retrieval"],
     "model": "lyra-en",
-    "request": {"text": "Text: Double Asteroid Redirection Test (DART) is a NASA space mission aimed at testing a method of planetary defense against near-Earth objects (NEO). It will deliberately crash a space probe into the double asteroid Didymos' moon, Dimorphos, to test whether the kinetic energy of a spacecraft impact could successfully deflect an asteroid on a collision course with Earth. DART is a joint project between NASA and the Johns Hopkins Applied Physics Laboratory (APL), administered by NASA's Planetary Defense Coordination Office, with several NASA laboratories and offices providing technical support. International partners, such as the space agencies of Europe, Italy, and Japan, are contributing to related or subsequent projects. In August 2018, NASA approved the project to start the final design and assembly phase. DART was launched on 24 November 2021, at 06:21:02 UTC, with collision slated for 26 September 2022.\n\nKeywords:
-",
+    "request": {"text": "Text: Double Asteroid Redirection Test (DART) is a NASA space mission aimed at testing a method of planetary defense against near-Earth objects (NEO). It will deliberately crash a space probe into the double asteroid Didymos' moon, Dimorphos, to test whether the kinetic energy of a spacecraft impact could successfully deflect an asteroid on a collision course with Earth. DART is a joint project between NASA and the Johns Hopkins Applied Physics Laboratory (APL), administered by NASA's Planetary Defense Coordination Office, with several NASA laboratories and offices providing technical support. International partners, such as the space agencies of Europe, Italy, and Japan, are contributing to related or subsequent projects. In August 2018, NASA approved the project to start the final design and assembly phase. DART was launched on 24 November 2021, at 06:21:02 UTC, with collision slated for 26 September 2022.\n\nKeywords:",
                 "params": {
                     "mode": "nucleus",
                     "n_tokens": 15,
                     "temperature": 0.7,
-                    "presence_penalty": 1.,
+                    "presence_penalty": 1.0,
                     "stop_words": ["\n", "\n\n"]
                     }
                 }
@@ -119,7 +118,6 @@
                     "temperature": 0.8,
                     "n_completions": 3,
                     "n_best": 1,
-                    "presence_penalty": 1.,
                     "stop_words": ["!", "...", "\n"]
                     }
                 }
