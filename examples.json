@@ -2,7 +2,7 @@
     "title": "Write like Proust",
     "color": "#5436da",
     "sandboxHeader": "Discover Muse trying to match Marcel Proust!",
-    "sampleResponse": "Sample response", 
+    "sampleResponse": "Sample response",
     "tags": ["text-generation"],
     "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/signature_white.svg",
     "description": "Write like one of the most influential authors of the 20th century.",
@@ -18,19 +18,109 @@
 },{
     "title": "Eve, the Python Chatbot",
     "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/chatbot_white.svg",
-    "description": "Get help with Python from the chatbot Eve.", 
+    "description": "Get help with Python from the chatbot Eve.",
     "color": "#19c37d",
     "sandboxHeader": "Want to learn more about Python? Ask Muse!",
-    "sampleResponse": "Sample response",
+    "sampleResponse": "You can use the pop() method.",
     "tags": ["chatbot"],
     "model": "lyra-en",
-    "request": {"text": "Eve is an helpful chatbot knowledgeable about Python.\n\nYou: How do I sort an array?\nEve: You can use the sort() method.\nYou: How do I remove the last element of an array?\nEve:\n",
+    "request": {"text": "Eve is a helpful chatbot knowledgeable about Python.\n\nYou: How do I sort an array?\nEve: You can use the sort() method.\nYou: How do I remove the last element of an array?\nEve:\n",
                 "params": {
                     "mode": "nucleus",
                     "n_tokens": 25,
                     "p": 0.9,
                     "temperature": 0.9,
                     "stop_words": [".", "!", "...", "\n\n"]
+                    }
+                }
+},{
+    "title": "Sentiment Analysis",
+    "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/chatbot_white.svg",
+    "description": "Classify the sentiment of reviews with Muse.",
+    "color": "#19c37d",
+    "sandboxHeader": "Is this review positive or negative? Muse can answer!",
+    "sampleResponse": "Negative.",
+    "tags": ["sentiment-analysis"],
+    "model": "lyra-en",
+    "request": {"text": "This is a review sentiment classifier.\n\nReview: 'The new Dune movie is great!'\nSentiment: Positive.\n###\nReview: 'Suicide Squad was an awful movie, that's 2 hours of my life I won't get back...'\nSentiment: Negative.\n###\nReview: 'Wooh, just came out of Interstellar and it was amazing.'\nSentiment: Positive.\n###\nReview: 'TBH Squid Game wasn't worth my time.'\nSentiment:",
+                "params": {
+                    "mode": "nucleus",
+                    "n_tokens": 25,
+                    "temperature": 0.1,
+                    "stop_words": [".", "!", "...", "\n\n"]
+                    }
+                }
+},{
+    "title": "Open-ended Classification",
+    "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/chatbot_white.svg",
+    "description": "Open-ended classification",
+    "color": "#19c37d",
+    "sandboxHeader": "Muse understands what you want. Just ask for it!",
+    "sampleResponse": "Search, Internet",
+    "tags": ["sentiment-analysis"],
+    "model": "lyra-en",
+    "request": {"text": "The following is a list of companies and the categories they fall into\n\nMeta: Social media, Virtual Reality\nLinkedIn: Social media, Careers\nDeliveroo: Logistics, Food, Marketplace\nUber: Transportation, Marketplace\nUnilever: Conglomerate, Consumer Goods\nMcDonalds: Fast Food, Restaurants\nGoogle:",
+                "params": {
+                    "mode": "nucleus",
+                    "n_tokens": 25,
+                    "temperature": 0.3,
+                    "stop_words": [".", "!", "...", "\n\n"]
+                    }
+                }
+},{
+    "title": "Text Autocorrect",
+    "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/chatbot_white.svg",
+    "description": "Correct your grammar.",
+    "color": "#19c37d",
+    "sandboxHeader": "A doubt on your grammar? Here to help!",
+    "sampleResponse": "Can we use their house?",
+    "tags": ["autocorrect"],
+    "model": "lyra-en",
+    "request": {"text": "Correct sentences into proper English.\n\nIncorrect: Can we use there house?\nCorrect:",
+                "params": {
+                    "mode": "nucleus",
+                    "n_tokens": 25,
+                    "temperature": 0.2,
+                    "stop_words": ["\n", "\n\n"]
+                    }
+                }
+},{
+    "title": "Keyword Retrieval",
+    "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/chatbot_white.svg",
+    "description": "Retrieve keywords from a text.",
+    "color": "#19c37d",
+    "sandboxHeader": "Need some keywords! Ready for extraction!",
+    "sampleResponse": "DART, Planetary Defense, Asteroid, Didymos, Moon",
+    "tags": ["keywords-retrieval"],
+    "model": "lyra-en",
+    "request": {"text": "Text: Double Asteroid Redirection Test (DART) is a NASA space mission aimed at testing a method of planetary defense against near-Earth objects (NEO). It will deliberately crash a space probe into the double asteroid Didymos' moon, Dimorphos, to test whether the kinetic energy of a spacecraft impact could successfully deflect an asteroid on a collision course with Earth. DART is a joint project between NASA and the Johns Hopkins Applied Physics Laboratory (APL), administered by NASA's Planetary Defense Coordination Office, with several NASA laboratories and offices providing technical support. International partners, such as the space agencies of Europe, Italy, and Japan, are contributing to related or subsequent projects. In August 2018, NASA approved the project to start the final design and assembly phase. DART was launched on 24 November 2021, at 06:21:02 UTC, with collision slated for 26 September 2022.\n\nKeywords:
+",
+                "params": {
+                    "mode": "nucleus",
+                    "n_tokens": 15,
+                    "temperature": 0.7,
+                    "presence_penalty": 1.,
+                    "stop_words": ["\n", "\n\n"]
+                    }
+                }
+},{
+    "title": "Summary Generation",
+    "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/chatbot_white.svg",
+    "description": "Generate summaries of long texts.",
+    "color": "#19c37d",
+    "sandboxHeader": "Can you give me a TL;DR? Muse can!",
+    "sampleResponse": "Neutron stars are extremely dense and hot orbs of matter, formed in the aftermath of a supernova explosion, with a mass between 1.4 and 2.5 solar masses and a radius of about 10 kilometers (6.2 mi).",
+    "tags": ["summary-generation"],
+    "model": "lyra-en",
+    "request": {"text": "A neutron star is the collapsed core of a massive supergiant star, which had a total mass of between 10 and 25 solar masses, possibly more if the star was especially metal-rich.[1] Neutron stars are the smallest and densest stellar objects, excluding black holes and hypothetical white holes, quark stars, and strange stars.[2] Neutron stars have a radius on the order of 10 kilometres (6.2 mi) and a mass of about 1.4 solar masses.[3] They result from the supernova explosion of a massive star, combined with gravitational collapse, that compresses the core past white dwarf star density to that of atomic nuclei.\n\ntl;dr:",
+                "params": {
+                    "mode": "nucleus",
+                    "n_tokens": 100,
+                    "temperature": 0.8,
+                    "n_completions": 3,
+                    "n_best": 1,
+                    "presence_penalty": 1.,
+                    "stop_words": ["!", "...", "\n"]
                     }
                 }
 }]
