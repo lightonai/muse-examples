@@ -64,7 +64,7 @@
                     "mode": "nucleus",
                     "n_tokens": 25,
                     "temperature": 0.3,
-                    "stop_words": [".", "!", "...", "\n\n"]
+                    "stop_words": [".", "!", "...", "\n", "\n\n"]
                     }
                 }
 },{
@@ -119,6 +119,54 @@
                     "n_completions": 3,
                     "n_best": 1,
                     "stop_words": ["!", "...", "\n"]
+                    }
+                }
+},{
+    "title": "Trivial Pursuit spielen",
+    "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/chatbot_white.svg",
+    "description": "Beantworten Sie Fragen mit Muse.",
+    "color": "#19c37d",
+    "sandboxHeader": "Trivial Pursuit spielen",
+    "sampleResponse": "Wolfgang Amadeus Mozart wurde am 29. Jänner 1756 in Salzburg geboren.",
+    "tags": ["question-answering"],
+    "model": "auriga-de",
+    "request": {"text": "Wann wurde Wolfgang Amadeus Mozart geboren?",
+                "params": {
+                    "mode": "nucleus",
+                    "n_tokens": 25,
+                    "stop_words": [".", "!", "...", "\n"]
+                    }
+                }
+},{
+    "title": "Landeshauptstädte erraten",
+    "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/chatbot_white.svg",
+    "description": "Landeshauptstädte erraten mit Muse.",
+    "color": "#19c37d",
+    "sandboxHeader": "Landeshauptstädte erraten mit Muse.",
+    "sampleResponse": "Die Hauptstadt von Belgien ist Brüssel.",
+    "tags": ["question-answering"],
+    "model": "auriga-de",
+    "request": {"text": "Was ist die Hauptstadt von Belgien?",
+                "params": {
+                    "mode": "nucleus",
+                    "n_tokens": 25,
+                    "stop_words": [".", "!", "...", "\n"]
+                    }
+                }
+},{
+    "title": "Erstellung von Zusammenfassungen",
+    "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/chatbot_white.svg",
+    "description": "Erstellung von Zusammenfassungen mit Muse.",
+    "color": "#19c37d",
+    "sandboxHeader": "Erstellung von Zusammenfassungen mit Muse.",
+    "sampleResponse": "Die deutsche Mannschaft hat sich im Rennen um die Medaillen in Peking am Dienstag mit einem Doppelsieg gegen die russische Mannschaft durchgesetzt.",
+    "tags": ["summary-generation"],
+    "model": "auriga-de",
+    "request": {"text": "Natalie Geisenberger hat ihr fünftes Olympia-Gold im Rennrodeln gewonnen. Die Rekordweltmeisterin setzte sich bei den Winterspielen in Peking am Dienstag nach vier Läufen vor ihrer Teamkollegin Anna Berreiter durch, die bei ihrem Olympia-Debüt gleich Silber gewann. Bronze ging an die Russin Tatjana Iwanowa. Weltmeisterin Julia Taubitz verpasste nach ihrem Sturz vom Vortag als Siebte das Podest deutlich. Geisenberger blieb auf ihrer Rekordjagd ganz cool. In ihrem Sieglauf passierte sie die Kurve 13, in der so viele Athletinnen vor ihr gestürzt waren, auch ein viertes Mal ohne Probleme – und wurde im Ziel bereits von der jubelnden deutschen Delegation empfangen. Anna Berreiter rundete mit Silber das starke deutsche Ergebnis ab. Schon in Pyeongchang 2018 und Sotschi 2014 hatte das Team D einen Doppelsieg mit Geisenberger an der Spitze bejubeln dürfen, seit 1998 kamen die Olympiasiegerinnen im Einsitzer der Frauen stets aus Deutschland. Geisenberger zog durch den Sieg nach Gold-Medaillen mit der bislang erfolgreichsten deutschen Winter-Olympionikin Claudia Pechstein gleich. In der Teamstaffel am Donnerstag kann sie sich nun sogar den alleinigen Rekord vor der Eisschnellläuferin sichern.Tl;dr :",
+                "params": {
+                    "mode": "nucleus",
+                    "n_tokens": 25,
+                    "stop_words": [".", "!", "...", "\n"]
                     }
                 }
 }]
