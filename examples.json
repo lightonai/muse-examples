@@ -6,7 +6,7 @@
     "tags": ["text-generation"],
     "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/signature_white.svg",
     "description": "Write like one of the most influential authors of the 20th century.",
-    "model": "orion-fr-v2",
+    "model": "orion-fr",
     "request": {"text": "C'était un temps que je connaissais ; j'eus la sensation et le pressentiment que le jour de l'An n'était pas un jour différent des autres, qu'il n'était pas le premier d'un monde nouveau",
                 "params": {
                     "mode": "nucleus",
@@ -116,8 +116,6 @@
                     "mode": "nucleus",
                     "n_tokens": 100,
                     "temperature": 0.8,
-                    "n_completions": 3,
-                    "n_best": 1,
                     "stop_words": ["!", "...", "\n"]
                     }
                 }
