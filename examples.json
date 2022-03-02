@@ -167,4 +167,22 @@
                     "stop_words": [".", "!", "...", "\n"]
                     }
                 }
+},{
+    "title": "Find Inspiration for Art Names",
+    "color": "#19c37d",
+    "sandboxHeader": "Use Muse to Generate Names for Art Pieces",
+    "sampleResponse": "L'oiseau de feu.",
+    "tags": ["text-generation"],
+    "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/signature_white.svg",
+    "description": "Describe your paintings to generate candidate names.",
+    "model": "orion-fr",
+    "request": {"text":     "Génère un titre correspondant à la peinture décrite.\n***\nDescription: Au premier plan, il y a un arbre et derrière se trouve une ville de nuit avec un magnifique ciel rempli d’étoiles.\nTitre: La nuit étoilée.\n***\nDescription: On voit le portrait d'une jeune femme, sur fond d'un paysage montagneux aux horizons lointains et brumeux.\nTitre: La Joconde.\n***\nDescription: Il y a une très grande vague sur laquelle se trouve une barque et plein de petites vagues.\nTitre: La grande vague.\n***\nDescription: Quelques bateaux flottent sur l'eau avec, à l'horizon, un fond flou et un grand soleil rouge éclairant l'eau.\nTitre: ",
+                "params": {
+                    "mode": "nucleus",
+                    "n_tokens": 10,
+                    "p": 0.9,
+                    "temperature": 1.0,
+                    "stop_words": [".", "!", "...", "\n"]
+                    }
+                }
 }]
