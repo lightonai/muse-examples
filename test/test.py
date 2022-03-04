@@ -7,7 +7,7 @@ from lightonmuse import Tokenize
 
 class PublicLimits(Enum):
     INPUT_TOKENS = 384
-    OUTPUT_TOKENS = 128
+    OUTPUT_TOKENS = 51
     MAX_BATCH_SIZE = 1
 
 
