@@ -120,51 +120,72 @@
                     }
                 }
 },{
-    "title": "Trivial Pursuit spielen",
+    "title": "Faktengenerator",
     "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/chatbot_white.svg",
-    "description": "Beantworten Sie Fragen mit Muse.",
+    "description": "Generiere interessante Fakten über ein beliebiges Thema.",
     "color": "#19c37d",
-    "sandboxHeader": "Trivial Pursuit spielen",
-    "sampleResponse": "Wolfgang Amadeus Mozart wurde am 29. Jänner 1756 in Salzburg geboren.",
+    "sandboxHeader": "Faktengenerator",
+    "sampleResponse": "Berlin ist die Hauptstadt Deutschlands und befindet sich im Herzen Europas. Es gibt viele wichtige Sehenswürdigkeiten in Berlin, die einen Besuch wert sind. Zu den wichtigsten Sehenswürdigkeiten zählen das Brandenburger Tor, der Reichstag, das Schloss Charlottenburg und der Tiergarten. Das Brandenburger Tor befindet sich im Zentrum von Berlin und ist eines der bekanntesten Wahrzeichen von Deutschland. Es wurde im Jahr 1788 erbaut und gilt als eines der größten Bauwerke in Europa. Das Schloss Charlottenburg wurde zwischen 1727 und 1737 erbaut, während das Schloss am Großen Stern",
     "tags": ["question-answering"],
     "model": "auriga-de",
-    "request": {"text": "Wann wurde Wolfgang Amadeus Mozart geboren?",
+    "request": {"text": "Was sind die interessantesten Fakten über Berlin?",
                 "params": {
                     "mode": "nucleus",
-                    "n_tokens": 25,
-                    "stop_words": [".", "!", "...", "\n"]
+                    "n_tokens": 100,
+                    "temperature": 0.8,
+                    "p": 0.8
                     }
                 }
 },{
-    "title": "Landeshauptstädte erraten",
+    "title": "Geographiewissen",
     "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/chatbot_white.svg",
-    "description": "Landeshauptstädte erraten mit Muse.",
+    "description": "Frage nach Fakten über Hauptstädte von Ländern, Höhe von Bergen, etc.",
     "color": "#19c37d",
-    "sandboxHeader": "Landeshauptstädte erraten mit Muse.",
+    "sandboxHeader": "Geographiewissen",
+    "sampleResponse": "Die Zugspitze ist mit einer Höhe von 2.962 m der höchste Berg Deutschlands. Sie",
+    "tags": ["question-answering"],
+    "model": "auriga-de",
+    "request": {"text": "Wie hoch ist die Zugspitze?",
+                "params": {
+                    "mode": "nucleus",
+                    "n_tokens": 19,
+                    "temperature": 0.5,
+                    "p": 0.8
+                    }
+                }
+},{
+    "title": "Wer war ...?",
+    "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/chatbot_white.svg",
+    "description": "Wer war Konrad Adenauer?",
+    "color": "#19c37d",
+    "sandboxHeader": "Wer war ...?",
+    "sampleResponse": "Konrad Adenauer war ein deutscher Politiker der CDU. Er war von 1949 bis 1963 Bundeskanzler der Bundesrepublik Deutschland. Konrad Adenauer wurde",
+    "tags": ["question-answering"],
+    "model": "auriga-de",
+    "request": {"text": "Wer war Konrad Adenauer?",
+                "params": {
+                    "mode": "nucleus",
+                    "n_tokens": 25,
+                    "temperature": 0.3,
+                    "p": 0.9
+                    }
+                }
+},{
+    "title": "Was ist die Hauptstadt von ...?",
+    "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/chatbot_white.svg",
+    "description": "Frage Muse nach der Hauptstadt eines Landes.",
+    "color": "#19c37d",
+    "sandboxHeader": "Was ist die Hauptstadt von ...?",
     "sampleResponse": "Die Hauptstadt von Belgien ist Brüssel.",
     "tags": ["question-answering"],
     "model": "auriga-de",
     "request": {"text": "Was ist die Hauptstadt von Belgien?",
                 "params": {
                     "mode": "nucleus",
-                    "n_tokens": 25,
-                    "stop_words": [".", "!", "...", "\n"]
-                    }
-                }
-},{
-    "title": "Erstellung von Zusammenfassungen",
-    "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/chatbot_white.svg",
-    "description": "Erstellung von Zusammenfassungen mit Muse.",
-    "color": "#19c37d",
-    "sandboxHeader": "Erstellung von Zusammenfassungen mit Muse.",
-    "sampleResponse": "Die deutsche Mannschaft hat sich im Rennen um die Medaillen in Peking am Dienstag mit einem Doppelsieg gegen die russische Mannschaft durchgesetzt.",
-    "tags": ["summary-generation"],
-    "model": "auriga-de",
-    "request": {"text": "Natalie Geisenberger hat ihr fünftes Olympia-Gold im Rennrodeln gewonnen. Die Rekordweltmeisterin setzte sich bei den Winterspielen in Peking am Dienstag nach vier Läufen vor ihrer Teamkollegin Anna Berreiter durch, die bei ihrem Olympia-Debüt gleich Silber gewann. Bronze ging an die Russin Tatjana Iwanowa. Weltmeisterin Julia Taubitz verpasste nach ihrem Sturz vom Vortag als Siebte das Podest deutlich. Geisenberger blieb auf ihrer Rekordjagd ganz cool. In ihrem Sieglauf passierte sie die Kurve 13, in der so viele Athletinnen vor ihr gestürzt waren, auch ein viertes Mal ohne Probleme – und wurde im Ziel bereits von der jubelnden deutschen Delegation empfangen. Anna Berreiter rundete mit Silber das starke deutsche Ergebnis ab. Schon in Pyeongchang 2018 und Sotschi 2014 hatte das Team D einen Doppelsieg mit Geisenberger an der Spitze bejubeln dürfen, seit 1998 kamen die Olympiasiegerinnen im Einsitzer der Frauen stets aus Deutschland. Geisenberger zog durch den Sieg nach Gold-Medaillen mit der bislang erfolgreichsten deutschen Winter-Olympionikin Claudia Pechstein gleich. In der Teamstaffel am Donnerstag kann sie sich nun sogar den alleinigen Rekord vor der Eisschnellläuferin sichern.Tl;dr :",
-                "params": {
-                    "mode": "nucleus",
-                    "n_tokens": 25,
-                    "stop_words": [".", "!", "...", "\n"]
+                    "n_tokens": 10,
+                    "temperature": 0.1,
+                    "p": 0.9,
+                    "stop_words": ["."]
                     }
                 }
 },{
