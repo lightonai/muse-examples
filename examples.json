@@ -294,4 +294,39 @@
                     "stop_words": ["\n", "###"]
                     }
                 }
+},{
+    "title": "Classificare frasi",
+    "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/signature_white.svg",
+    "description": "Un esempio su recensioni di libri",
+    "color": "#19c37d",
+    "sandboxHeader": "Recensioni",
+    "sampleResponse": "Negativo.",
+    "tags": ["sentiment-analysis"],
+    "model": "auriga-it",
+    "request": {"text": "Classifica le seguenti recensioni:\n----------\nRecensione : Un libro straordinario, con una trama appassionante e ricca di colpi di scena\nGiudizio : Positivo.\n----------\nRecensione : Il terzo capitolo di questa saga è il culmine di una grande avventura. La storia è coinvolgente dall'inizio alla fine con un finale pieno di sorprese. Consiglio vivamente la lettura!  \nGiudizio : Positivo.\n----------\nRecensione : Un romanzo estremamente noioso. Non ci sono personaggi interessanti, e la trama è banale e prevedibile\nGiudizio : Negativo.\n----------\nRecensione : Un libro terribile che non raccomanderei a nessuno\nGiudizio :",
+                "params": {
+                    "mode": "nucleus", 
+                    "n_tokens": 30, 
+                    "temperature": 0.1, 
+                    "p": 0.9, 
+                    "stop_words": [".", "!", "...", "\n\n"],
+                    }
+                }
+},{
+    "title": "Q&A",
+    "img": "put_an_image_of_the_Coliseum.png",
+    "description": "Rispondere a domande sul contenuto di un testo",
+    "color": "#19c37d",
+    "sandboxHeader": "Rispondi a una domanda su un testo",
+    "sampleResponse": "i gladiatori",
+    "tags": ["question-answering"],
+    "model": "auriga-it",
+    "request": {"text": "\nIl Colosseo situato nel centro della città di Roma, è il più grande anfiteatro romano del mondo. Fu edificato in epoca Flavia da Vespasiano nel 70 d.C. e concluso da Tito, che lo inaugurò il 21 Aprile nell'80 d.C.\nAnticamente era usato per gli spettacoli di gladiatori e altre manifestazioni pubbliche (spettacoli di caccia, battaglie navali, rievocazioni di battaglie famose.\n\nDomanda: Quando è iniziata la costruzione del Colosseo?\nRisposta: Nel 70 D.C\n\nDomanda: Chi ha iniziato la costruzione del Colosseo?\nRisposta: Vespasiano\n\nDomanda: In che epoca è stato costruito il Colosseo?\nRisposta: in epoca Flavia\n\nDomanda: Chi combatteva nel colosseo?\nRisposta: \n",
+                "params": {
+                    "mode": "nucleus",
+                    "n_tokens": 4,
+                    "temperature": 1.0,
+                    "p": 0.9
+                    }
+                }
 }]
