@@ -329,4 +329,76 @@
                     "p": 0.9
                     }
                 }
-}]
+},{
+    "title": "Generare parole chiave",
+    "img": "image_of_the_Alps.png",
+    "description": "Estrarre parole chiavi da un testo",
+    "color": "#19c37d",
+    "sandboxHeader": "Le Alpi",
+    "sampleResponse": "\n- Europa;\n- Italia;\n- Francia;\n- Svizzera;\n- Austria;",
+    "tags": ["keywords-retrieval"],
+    "model": "auriga-it",
+    "request": {"text": "\nLe Alpi sono la catena montuosa più importante d'Europa, situata a cavallo dei confini di Italia, Francia, Svizzera, Liechtenstein, Germania, Austria, Slovenia e, sia pure in modo del tutto marginale, l'Ungheria. Separano l'Europa centrale da quella meridionale e racchiudono la regione geografica italiana, comprendendo al loro interno le vette più alte del continente europeo, tra cui il Monte Bianco, che con i suoi 4810 m d'altezza è la montagna più alta della catena, d'Italia, di Francia e in generale del continente.\nL'intero sistema montuoso si distende per circa 1300 km, formando un arco tra l'Italia Settentrionale, la Francia sudorientale, la Svizzera meridionale, il Liechtenstein, la Germania meridionale, l'Austria e la Slovenia occidentale, raggiungendo con le sue estreme propaggini l'Ungheria occidentale.\n\nParole chiavi:\n- Alpi;\n\n",
+            "params": {
+                "mode": "nucleus", 
+                "n_tokens": 20, 
+                "temperature": 0.8, 
+                "p": 0.9, 
+                "stop_words": ["\n\n"],
+                }
+            }
+},{
+    "title": "Q&A",
+    "img": "image_of_Spain.png",
+    "description": "Responde una pregunta",
+    "color": "#19c37d",
+    "sandboxHeader": "Responde una pregunta",
+    "sampleResponse": "Portugal.",
+    "tags": ["question-answering"],
+    "model": "auriga-es",
+    "request": {"text": "España, también denominado Reino de España,nota 1\u200b es un país soberano transcontinental, miembro de la Unión Europea. España se sitúa tanto al sur de Europa Occidental como en el norte de África. En Europa, ocupa la mayor parte de la península ibérica, las islas Baleares, Melilla, las islas Canarias, y otras posesiones mediterráneas.\nEl territorio peninsular comparte fronteras terrestres con Francia y con Andorra al norte, con Portugal al oeste y con el territorio británico de Gibraltar al sur.\nEl relieve de España se caracteriza por ser bastante elevado, con una altitud media de 660 metros, y montañoso si se compara con el resto de países de Europa\n\nPregunta: ¿España es miembro de la Unión Europea?\nRespuesta: sí.\n\nPregunta: ¿Cuál es la altitud media de España?\nRespuesta: 660 m.\n\nPregunta: ¿Qué país está al oeste de España?\nRespuesta: \n",
+            "params": {
+                "mode": "nucleus", 
+                "n_tokens": 5, 
+                "temperature": 0.8, 
+                "p": 0.9,
+                "stop_words": ["."]
+                }
+            }
+},{
+    "title": "Palabras clave",
+    "img": "image_of_Picasso.png",
+    "description": "Palabras clave de un texto",
+    "color": "#19c37d",
+    "sandboxHeader": "Palabras clave de un texto",
+    "sampleResponse": "\n- Cubismo;\n- La vida;\n- La primera comunión",
+    "tags": ["keywords-retrieval"],
+    "model": "auriga-es",
+    "request": {"text": "Pablo Ruiz Picasso (Málaga, 25 de octubre de 1881–Mougins, 8 de abril de 1973) fue un pintor y escultor español, creador, junto con Georges Braque, del cubismo.\nEn el invierno de 1895 realizó su primer gran lienzo académico, La primera comunión (Museo Picasso, Barcelona), en Barcelona, ciudad en la que residió unos nueve años, salvo algunas vacaciones de verano y estancias más o menos largas en Madrid y París.\nEn enero de 1903 Picasso volvió a Barcelona. En primavera comenzó el cuadro La vida, uno de los mayores y más complejos lienzos de su época azul, considerado su trabajo más importante de estos años, obra de un simbolismo inusualmente oscuro en sus primeras obras y sujeto a múltiples interpretaciones académicas, sobre las cuales el artista nunca se pronunció. \n\nPalabras clave:\n- Picasso;\n",
+            "params": {
+                "mode": "nucleus", 
+                "n_tokens": 15, 
+                "temperature": 0.5, 
+                "p": 0.9
+                }
+            }
+},{
+    "title": "Generar sinónimos",
+    "img": "no_idea.png",
+    "description": "",
+    "color": "#19c37d",
+    "sandboxHeader": "Generar sinónimos de una palabra",
+    "sampleResponse": "colosal, poderoso, soberbio.",
+    "tags": ["text-generation"],
+    "model": "auriga-es",
+    "request": {"text": "Generar algunos sinónimos de las siguientes palabras:\n======\nPalabra: bueno;\nSinónimos: virtuoso, benévolo, caritativo.\n======\nPalabra: mala;\nSinónimos: maliciosa, corrupta, peligrosa.\n======\nPalabra: pequeña;\nSinónimos: diminuta, limitada, reducida\n======\nPalabra: grande;\nSinónimos:\n",
+            "params": {
+                "mode": "nucleus", 
+                "n_tokens": 15, 
+                "temperature": 0.9, 
+                "p": 0.9,
+                "stop_words": ["."]
+                }
+            }
+}  
+]
