@@ -180,7 +180,7 @@
     "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/signature_white.svg",
     "description": "Describe your paintings to generate candidate names.",
     "model": "orion-fr",
-    "request": {"text":     "Génère un titre correspondant à la peinture décrite.\n***\nDescription: Au premier plan, il y a un arbre et derrière se trouve une ville de nuit avec un magnifique ciel rempli d’étoiles.\nTitre: La nuit étoilée.\n***\nDescription: On voit le portrait d'une jeune femme, sur fond d'un paysage montagneux aux horizons lointains et brumeux.\nTitre: La Joconde.\n***\nDescription: Il y a une très grande vague sur laquelle se trouve une barque et plein de petites vagues.\nTitre: La grande vague.\n***\nDescription: Quelques bateaux flottent sur l'eau avec, à l'horizon, un fond flou et un grand soleil rouge éclairant l'eau.\nTitre: ",
+    "request": {"text": "Génère un titre correspondant à la peinture décrite.\n***\nDescription: Au premier plan, il y a un arbre et derrière se trouve une ville de nuit avec un magnifique ciel rempli d’étoiles.\nTitre: La nuit étoilée.\n***\nDescription: On voit le portrait d'une jeune femme, sur fond d'un paysage montagneux aux horizons lointains et brumeux.\nTitre: La Joconde.\n***\nDescription: Il y a une très grande vague sur laquelle se trouve une barque et plein de petites vagues.\nTitre: La grande vague.\n***\nDescription: Quelques bateaux flottent sur l'eau avec, à l'horizon, un fond flou et un grand soleil rouge éclairant l'eau.\nTitre: ",
                 "params": {
                     "mode": "nucleus",
                     "n_tokens": 10,
@@ -292,7 +292,7 @@
                     "n_tokens": 30, 
                     "temperature": 0.1, 
                     "p": 0.9, 
-                    "stop_words": [".", "!", "...", "\n\n"],
+                    "stop_words": [".", "!", "...", "\n\n"]
                     }
                 }
 },{
@@ -327,7 +327,7 @@
                 "n_tokens": 20, 
                 "temperature": 0.8, 
                 "p": 0.9, 
-                "stop_words": ["\n\n"],
+                "stop_words": ["\n\n"]
                 }
             }
 },{
@@ -383,5 +383,4 @@
                 "stop_words": ["."]
                 }
             }
-}  
-]
+}]
