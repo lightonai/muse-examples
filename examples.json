@@ -103,23 +103,6 @@
                     }
                 }
 },{
-    "title": "Summary Generation",
-    "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/chatbot_white.svg",
-    "description": "Generate summaries of long texts.",
-    "color": "#19c37d",
-    "sandboxHeader": "Can you give me a TL;DR? Muse can!",
-    "sampleResponse": "Neutron stars are extremely dense and hot orbs of matter, formed in the aftermath of a supernova explosion, with a mass between 1.4 and 2.5 solar masses and a radius of about 10 kilometers (6.2 mi).",
-    "tags": ["summary-generation"],
-    "model": "lyra-en",
-    "request": {"text": "A neutron star is the collapsed core of a massive supergiant star, which had a total mass of between 10 and 25 solar masses, possibly more if the star was especially metal-rich.[1] Neutron stars are the smallest and densest stellar objects, excluding black holes and hypothetical white holes, quark stars, and strange stars.[2] Neutron stars have a radius on the order of 10 kilometres (6.2 mi) and a mass of about 1.4 solar masses.[3] They result from the supernova explosion of a massive star, combined with gravitational collapse, that compresses the core past white dwarf star density to that of atomic nuclei.\n\ntl;dr:",
-                "params": {
-                    "mode": "nucleus",
-                    "n_tokens": 100,
-                    "temperature": 0.8,
-                    "stop_words": ["!", "...", "\n"]
-                    }
-                }
-},{
     "title": "Faktengenerator",
     "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/chatbot_white.svg",
     "description": "Generiere interessante Fakten über ein beliebiges Thema.",
