@@ -125,13 +125,13 @@
     "description": "Generiere interessante Fakten über ein beliebiges Thema.",
     "color": "#19c37d",
     "sandboxHeader": "Faktengenerator",
-    "sampleResponse": "Berlin ist die Hauptstadt Deutschlands und befindet sich im Herzen Europas. Es gibt viele wichtige Sehenswürdigkeiten in Berlin, die einen Besuch wert sind. Zu den wichtigsten Sehenswürdigkeiten zählen das Brandenburger Tor, der Reichstag, das Schloss Charlottenburg und der Tiergarten. Das Brandenburger Tor befindet sich im Zentrum von Berlin und ist eines der bekanntesten Wahrzeichen von Deutschland. Es wurde im Jahr 1788 erbaut und gilt als eines der größten Bauwerke in Europa. Das Schloss Charlottenburg wurde zwischen 1727 und 1737 erbaut, während das Schloss am Großen Stern",
+    "sampleResponse": "Berlin ist eine Stadt, die für ihre berühmten Sehenswürdigkeiten bekannt ist. Die Geschichte Berlins reicht bis ins 12. Jahrhundert zurück, als es von der Hanse gegründet wurde. Zu den berühmtesten Sehenswürdigkeiten gehören die Museumsinsel, das Brandenburger Tor und der Reichstag.",
     "tags": ["question-answering"],
     "model": "auriga-de",
     "request": {"text": "Was sind die interessantesten Fakten über Berlin?",
                 "params": {
                     "mode": "nucleus",
-                    "n_tokens": 100,
+                    "n_tokens": 50,
                     "temperature": 0.8,
                     "p": 0.8
                     }
@@ -235,7 +235,7 @@
     "request": {"text": "Question: Qu'est-ce que la datation par le carbone 14 ?\nRéponse:",
                 "params": {
                     "mode": "nucleus",
-                    "n_tokens": 100,
+                    "n_tokens": 45,
                     "temperature": 0.5,
                     "stop_words": ["\n"]
                     }
@@ -263,7 +263,7 @@
     "title": "Génération d'idées d'articles",
     "color": "#19c37d",
     "sandboxHeader": "En manque d'inspiration ? Muse peut donner des idées !",
-    "sampleResponse": "Des aquarelles et des pastels.\n- Aquarelle et figuration\n- Le trait libre\n- Les encres\n- Conseils pour bien utiliser les couleurs en aquarelle\n- Aquarelle et archéologie\n- Conseils pour l'aquarelle : petit cahier de 'conseils pour l'aquarelle'.\n- Aquarelle, couleur pure\n- Aquarelle, formation et usages\n- Décider de la durée de l'aquarelle",
+    "sampleResponse": "L'histoire de l'aquarelle\n- Bibliographie sur l'aquarelle\n- Associations de peintres aquarellistes\n- Les pigments\n- Mélanges et colorants pour aquarelle\n-",
     "tags": ["text-generation"],
     "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/signature_white.svg",
     "description": "Utilise Muse pour générer une liste d'idées d'articles sur un sujet donné.",
@@ -271,7 +271,7 @@
     "request": {"text": "Génère une liste d'idées d'articles sur l'aquarelle.\n\n- L'aquarelle dans l'histoire\n- ",
                 "params": {
                     "mode": "nucleus",
-                    "n_tokens": 100,
+                    "n_tokens": 45,
                     "p": 0.9,
                     "temperature": 1.0
                     }
@@ -288,7 +288,7 @@
     "request": {"text": "Réponds aux avis clients suivants.\n###\nAvis: Ça fait plusieurs fois que je viens et je n’ai jamais été déçue. L’accueil est chaleureux, les pizzas sont juste parfaites. J’ai enfin goûté un dessert et il était largement à la hauteur du reste ! Bref, au top, j’y retournerai bientôt !\nRéponse: Wow, nous sommes très touchés par votre commentaire ! Un grand merci à vous et à très bientôt !\n###\nAvis: Décevant surtout au vu de la bonne note du resto, je m'attendais à me régaler mais pas vraiment. Le tiramisu, certes bien garni, était très liquide, on aurait dit que c'était mélangé avec de l'eau, et pas très bon. \nRéponse: Nous sommes désolés de ne pas avoir répondu à vos attentes. Nous espérons que vous nous donnerez une autre chance bientôt.\n###\nAvis: Super pizzeria ! Accueil sympathique. On y va souvent mais on ne s'en lasse pas !\nRéponse:",
                 "params": {
                     "mode": "nucleus",
-                    "n_tokens": 60,
+                    "n_tokens": 50,
                     "p": 0.9,
                     "temperature": 1.0,
                     "stop_words": ["\n", "###"]
