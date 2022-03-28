@@ -27,10 +27,9 @@
     "request": {"text": "Eve is a helpful chatbot knowledgeable about Python.\n\nYou: How do I sort an array?\nEve: You can use the sort() method.\nYou: How do I remove the last element of an array?\nEve:\n",
                 "params": {
                     "mode": "nucleus",
-                    "n_tokens": 25,
+                    "n_tokens": 8,
                     "p": 0.9,
-                    "temperature": 0.9,
-                    "stop_words": [".", "!", "...", "\n\n"]
+                    "temperature": 0.9
                     }
                 }
 },{
@@ -45,9 +44,8 @@
     "request": {"text": "This is a review sentiment classifier.\n\nReview: 'The new Dune movie is great!'\nSentiment: Positive.\n###\nReview: 'Suicide Squad was an awful movie, that's 2 hours of my life I won't get back...'\nSentiment: Negative.\n###\nReview: 'Wooh, just came out of Interstellar and it was amazing.'\nSentiment: Positive.\n###\nReview: 'TBH Squid Game wasn't worth my time.'\nSentiment:",
                 "params": {
                     "mode": "nucleus",
-                    "n_tokens": 25,
-                    "temperature": 0.1,
-                    "stop_words": [".", "!", "...", "\n\n"]
+                    "n_tokens": 2,
+                    "temperature": 0.1
                     }
                 }
 },{
@@ -62,9 +60,8 @@
     "request": {"text": "The following is a list of companies and the categories they fall into\n\nMeta: Social media, Virtual Reality\nLinkedIn: Social media, Careers\nDeliveroo: Logistics, Food, Marketplace\nUber: Transportation, Marketplace\nUnilever: Conglomerate, Consumer Goods\nMcDonalds: Fast Food, Restaurants\nGoogle:",
                 "params": {
                     "mode": "nucleus",
-                    "n_tokens": 25,
-                    "temperature": 0.3,
-                    "stop_words": [".", "!", "...", "\n", "\n\n"]
+                    "n_tokens": 15,
+                    "temperature": 0.3
                     }
                 }
 },{
@@ -79,9 +76,8 @@
     "request": {"text": "Correct sentences into proper English.\n\nIncorrect: Can we use there house?\nCorrect:",
                 "params": {
                     "mode": "nucleus",
-                    "n_tokens": 25,
-                    "temperature": 0.2,
-                    "stop_words": ["\n", "\n\n"]
+                    "n_tokens": 8,
+                    "temperature": 0.2
                     }
                 }
 },{
@@ -98,8 +94,7 @@
                     "mode": "nucleus",
                     "n_tokens": 15,
                     "temperature": 0.7,
-                    "presence_penalty": 1.0,
-                    "stop_words": ["\n\n"]
+                    "presence_penalty": 1.0
                     }
                 }
 },{
@@ -167,8 +162,7 @@
                     "mode": "nucleus",
                     "n_tokens": 10,
                     "temperature": 0.1,
-                    "p": 0.9,
-                    "stop_words": ["."]
+                    "p": 0.9
                     }
                 }
 },{
@@ -183,10 +177,9 @@
     "request": {"text": "Génère un titre correspondant à la peinture décrite.\n***\nDescription: Au premier plan, il y a un arbre et derrière se trouve une ville de nuit avec un magnifique ciel rempli d’étoiles.\nTitre: La nuit étoilée.\n***\nDescription: On voit le portrait d'une jeune femme, sur fond d'un paysage montagneux aux horizons lointains et brumeux.\nTitre: La Joconde.\n***\nDescription: Il y a une très grande vague sur laquelle se trouve une barque et plein de petites vagues.\nTitre: La grande vague.\n***\nDescription: Quelques bateaux flottent sur l'eau avec, à l'horizon, un fond flou et un grand soleil rouge éclairant l'eau.\nTitre: ",
                 "params": {
                     "mode": "nucleus",
-                    "n_tokens": 10,
+                    "n_tokens": 5,
                     "p": 0.9,
-                    "temperature": 1.0,
-                    "stop_words": [".", "!", "...", "\n"]
+                    "temperature": 1.0
                     }
                 }
 },{
@@ -201,9 +194,8 @@
     "request": {"text": "Détermine si ces critiques de film sont positives ou négatives.\n\nCritique: 'Un film touchant et riche en rebondissements.'\nCette critique est positive.\n----------\nCritique: 'Certaines répliques font vraiment rire, mais la mise en scène manque d'inventivité pour soutenir le rythme de la comédie.'\nCette critique est négative.\n----------\nCritique: 'La nullité du film dépasse à tous les niveaux ce que nous avions essayé de prévoir à travers les hallucinantes bandes-annonces diffusées sur le net.' \nCette critique est négative.\n----------\nCritique: 'Steven Spielberg, en misant sur l'authenticité, a signé un film qui frappe remarquablement juste.' \nCette critique est ",
                 "params": {
                     "mode": "nucleus",
-                    "n_tokens": 5,
-                    "temperature": 0.1,
-                    "stop_words": [".", "!", "...", "\n\n"]
+                    "n_tokens": 2,
+                    "temperature": 0.1
                     }
                 }
 },{
@@ -219,8 +211,7 @@
                 "params": {
                     "mode": "nucleus",
                     "n_tokens": 50,
-                    "temperature": 0.5,
-                    "stop_words": ["\n"]
+                    "temperature": 0.5
                     }
                 }
 },{
@@ -238,8 +229,7 @@
                     "k": 5,
                     "n_tokens": 10,
                     "temperature": 1.0,
-                    "presence_penalty": 1.0,
-                    "stop_words": ["\n", "\n\n"]
+                    "presence_penalty": 1.0
                     }
                 }
 },{
@@ -271,10 +261,9 @@
     "request": {"text": "Réponds aux avis clients suivants.\n###\nAvis: Ça fait plusieurs fois que je viens et je n’ai jamais été déçue. L’accueil est chaleureux, les pizzas sont juste parfaites. J’ai enfin goûté un dessert et il était largement à la hauteur du reste ! Bref, au top, j’y retournerai bientôt !\nRéponse: Wow, nous sommes très touchés par votre commentaire ! Un grand merci à vous et à très bientôt !\n###\nAvis: Décevant surtout au vu de la bonne note du resto, je m'attendais à me régaler mais pas vraiment. Le tiramisu, certes bien garni, était très liquide, on aurait dit que c'était mélangé avec de l'eau, et pas très bon. \nRéponse: Nous sommes désolés de ne pas avoir répondu à vos attentes. Nous espérons que vous nous donnerez une autre chance bientôt.\n###\nAvis: Super pizzeria ! Accueil sympathique. On y va souvent mais on ne s'en lasse pas !\nRéponse:",
                 "params": {
                     "mode": "nucleus",
-                    "n_tokens": 50,
+                    "n_tokens": 20,
                     "p": 0.9,
-                    "temperature": 1.0,
-                    "stop_words": ["\n", "###"]
+                    "temperature": 0.8
                     }
                 }
 },{
@@ -289,10 +278,9 @@
     "request": {"text": "Classifica le seguenti recensioni:\n----------\nRecensione : Un libro straordinario, con una trama appassionante e ricca di colpi di scena\nGiudizio : Positivo.\n----------\nRecensione : Il terzo capitolo di questa saga è il culmine di una grande avventura. La storia è coinvolgente dall'inizio alla fine con un finale pieno di sorprese. Consiglio vivamente la lettura!  \nGiudizio : Positivo.\n----------\nRecensione : Un romanzo estremamente noioso. Non ci sono personaggi interessanti, e la trama è banale e prevedibile\nGiudizio : Negativo.\n----------\nRecensione : Un libro terribile che non raccomanderei a nessuno\nGiudizio :",
                 "params": {
                     "mode": "nucleus", 
-                    "n_tokens": 30, 
+                    "n_tokens": 3, 
                     "temperature": 0.1, 
-                    "p": 0.9, 
-                    "stop_words": [".", "!", "...", "\n\n"]
+                    "p": 0.9
                     }
                 }
 },{
@@ -326,8 +314,7 @@
                 "mode": "nucleus", 
                 "n_tokens": 20, 
                 "temperature": 0.8, 
-                "p": 0.9, 
-                "stop_words": ["\n\n"]
+                "p": 0.9
                 }
             }
 },{
@@ -342,10 +329,9 @@
     "request": {"text": "España, también denominado Reino de España,nota 1\u200b es un país soberano transcontinental, miembro de la Unión Europea. España se sitúa tanto al sur de Europa Occidental como en el norte de África. En Europa, ocupa la mayor parte de la península ibérica, las islas Baleares, Melilla, las islas Canarias, y otras posesiones mediterráneas.\nEl territorio peninsular comparte fronteras terrestres con Francia y con Andorra al norte, con Portugal al oeste y con el territorio británico de Gibraltar al sur.\nEl relieve de España se caracteriza por ser bastante elevado, con una altitud media de 660 metros, y montañoso si se compara con el resto de países de Europa\n\nPregunta: ¿España es miembro de la Unión Europea?\nRespuesta: sí.\n\nPregunta: ¿Cuál es la altitud media de España?\nRespuesta: 660 m.\n\nPregunta: ¿Qué país está al oeste de España?\nRespuesta: \n",
             "params": {
                 "mode": "nucleus", 
-                "n_tokens": 5, 
+                "n_tokens": 3, 
                 "temperature": 0.8, 
-                "p": 0.9,
-                "stop_words": ["."]
+                "p": 0.9
                 }
             }
 },{
@@ -374,13 +360,12 @@
     "sampleResponse": "colosal, poderoso, soberbio.",
     "tags": ["text-generation"],
     "model": "auriga-es",
-    "request": {"text": "Generar algunos sinónimos de las siguientes palabras:\n======\nPalabra: bueno;\nSinónimos: virtuoso, benévolo, caritativo.\n======\nPalabra: mala;\nSinónimos: maliciosa, corrupta, peligrosa.\n======\nPalabra: pequeña;\nSinónimos: diminuta, limitada, reducida\n======\nPalabra: grande;\nSinónimos:\n",
+    "request": {"text": "Generar algunos sinónimos de las siguientes palabras:\n======\nPalabra: bueno;\nSinónimos: virtuoso, benévolo, caritativo.\n======\nPalabra: mala;\nSinónimos: maliciosa, corrupta, peligrosa.\n======\nPalabra: pequeña;\nSinónimos: diminuta, limitada, reducida.\n======\nPalabra: grande;\nSinónimos:\n",
             "params": {
                 "mode": "nucleus", 
-                "n_tokens": 15, 
+                "n_tokens": 10, 
                 "temperature": 0.9, 
-                "p": 0.9,
-                "stop_words": ["."]
+                "p": 0.9
                 }
             }
 }]
