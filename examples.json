@@ -190,7 +190,7 @@
     "sandboxHeader": "Cette critique est-elle positive ou négative ? Muse le sait !",
     "sampleResponse": "positive.",
     "tags": ["sentiment-analysis"],
-    "model": "orion-fr",
+    "model": "lyra-fr",
     "request": {"text": "Détermine si ces critiques de film sont positives ou négatives.\n\nCritique: 'Un film touchant et riche en rebondissements.'\nCette critique est positive.\n----------\nCritique: 'Certaines répliques font vraiment rire, mais la mise en scène manque d'inventivité pour soutenir le rythme de la comédie.'\nCette critique est négative.\n----------\nCritique: 'La nullité du film dépasse à tous les niveaux ce que nous avions essayé de prévoir à travers les hallucinantes bandes-annonces diffusées sur le net.' \nCette critique est négative.\n----------\nCritique: 'Steven Spielberg, en misant sur l'authenticité, a signé un film qui frappe remarquablement juste.' \nCette critique est ",
                 "params": {
                     "mode": "nucleus",
@@ -204,14 +204,14 @@
     "description": "Utilise Muse pour répondre à des questions de culture générale.",
     "color": "#19c37d",
     "sandboxHeader": "Une question de culture générale ? Demande à Muse la réponse !",
-    "sampleResponse": "Le carbone 14 est un isotope radioactif du carbone, qui se désintègre à des taux différents selon la nature de l'échantillon. Il est utilisé pour dater les vestiges archéologiques.",
+    "sampleResponse": "La datation par le carbone 14 est une méthode de datation radiométrique. Le carbone 14 est un isotope radioactif du carbone. Il est utilisé pour dater les objets archéologiques, les restes d'animaux et les sédiments",
     "tags": ["question-answering"],
-    "model": "orion-fr",
+    "model": "lyra-fr",
     "request": {"text": "Question: Qu'est-ce que la datation par le carbone 14 ?\nRéponse:",
                 "params": {
-                    "mode": "nucleus",
-                    "n_tokens": 50,
-                    "temperature": 0.5
+                    "mode": "topk",
+                    "n_tokens": 45,
+                    "temperature": 0.6
                     }
                 }
 },{
@@ -220,15 +220,15 @@
     "description": "Extrais les mots-clés d'un article.",
     "color": "#19c37d",
     "sandboxHeader": "Besoin de mots-clés pour trier des documents ? Utilise Muse !",
-    "sampleResponse": "corium, fusion nucléaire, combustible nucléaire, réacteur",
+    "sampleResponse": "Corium, fusion nucléaire, réacteur nucléaire, combustible",
     "tags": ["keywords-retrieval"],
-    "model": "orion-fr",
+    "model": "lyra-fr",
     "request": {"text": "Extrais les mots clés de l'article suivant: Le corium est un magma métallique et minéral constitué d'éléments fondus du cœur d'un réacteur nucléaire, puis des minéraux qu'il peut absorber lors de son trajet.  Le terme « corium » est un néologisme formé de core (en anglais, pour le cœur d'un réacteur nucléaire), suivi du suffixe -ium présent dans le nom de nombreux éléments du tableau périodique des éléments : lithium, calcium, uranium, plutonium, hélium, strontium, etc.  Initialement constitué du combustible nucléaire (principalement de l'oxyde d'uranium enrichi), des éléments de l'assemblage combustible et des divers équipements du cœur (barres de contrôle, instrumentation) ou de la paroi de la cuve du réacteur avec lesquels il entre en contact, il se forme à très haute température (environ 3 000 °C, température de fusion de l'oxyde d'uranium) quand le cœur n'est plus refroidi, comme lors d'accidents nucléaires tels ceux de Three Mile Island, de Tchernobyl, ou de Fukushima.\n\nMots-clés:",
                 "params": {
                     "mode": "topk",
                     "k": 5,
                     "n_tokens": 10,
-                    "temperature": 1.0,
+                    "temperature": 0.8,
                     "presence_penalty": 1.0
                     }
                 }
@@ -241,10 +241,10 @@
     "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/signature_white.svg",
     "description": "Utilise Muse pour générer une liste d'idées d'articles sur un sujet donné.",
     "model": "orion-fr",
-    "request": {"text": "Génère une liste d'idées d'articles sur l'aquarelle.\n\n- L'aquarelle dans l'histoire\n- ",
+    "request": {"text": "L'aquarelle entre peinture et poésie\n- Aquarelle et nature\n- L'aquarelle en vidéo\n- Les techniques et artistes\n- Les peintres aquarellistes\n",
                 "params": {
                     "mode": "nucleus",
-                    "n_tokens": 45,
+                    "n_tokens": 40,
                     "p": 0.9,
                     "temperature": 1.0
                     }
@@ -253,14 +253,14 @@
     "title": "Réponds à des commentaires clients",
     "color": "#19c37d",
     "sandboxHeader": "Réponds à des commentaires clients avec Muse !",
-    "sampleResponse": "Merci à vous pour votre commentaire et votre confiance !",
+    "sampleResponse": "Nous sommes très heureux de vous compter parmi nos clients ! Nous sommes ravis que vous ayez apprécié notre restaurant",
     "tags": ["text-generation"],
     "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/signature_white.svg",
     "description": "Utilise Muse pour répondre à des commentaires clients.",
     "model": "orion-fr",
     "request": {"text": "Réponds aux avis clients suivants.\n###\nAvis: Ça fait plusieurs fois que je viens et je n’ai jamais été déçue. L’accueil est chaleureux, les pizzas sont juste parfaites. J’ai enfin goûté un dessert et il était largement à la hauteur du reste ! Bref, au top, j’y retournerai bientôt !\nRéponse: Wow, nous sommes très touchés par votre commentaire ! Un grand merci à vous et à très bientôt !\n###\nAvis: Décevant surtout au vu de la bonne note du resto, je m'attendais à me régaler mais pas vraiment. Le tiramisu, certes bien garni, était très liquide, on aurait dit que c'était mélangé avec de l'eau, et pas très bon. \nRéponse: Nous sommes désolés de ne pas avoir répondu à vos attentes. Nous espérons que vous nous donnerez une autre chance bientôt.\n###\nAvis: Super pizzeria ! Accueil sympathique. On y va souvent mais on ne s'en lasse pas !\nRéponse:",
                 "params": {
-                    "mode": "nucleus",
+                    "mode": "topk",
                     "n_tokens": 20,
                     "p": 0.9,
                     "temperature": 0.8
