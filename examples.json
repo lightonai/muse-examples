@@ -368,4 +368,36 @@
                 "p": 0.9
                 }
             }
+},{
+    "title": "Liste d'ingrédients",
+    "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/chatbot_white.svg",
+    "description": "Utilise Muse pour générer la liste des ingrédients utilisés dans une recette !",
+    "color": "#19c37d",
+    "sandboxHeader": "Demande à Muse de gérer ta liste de courses !",
+    "sampleResponse": "1 kg de melon\n- 1 kg de framboises\n- 1 kg de bananes\n- 1 kg de yaourts",
+    "tags": ["text-generation"],
+    "model": "lyra-fr",
+    "request": {"text": "Fais une liste des ingrédients utilisés dans une recette donnée.\nRecette: 'Couper les melons en 2, ôter les graines et les évider avec une cuillère parisienne.\nMettre dans un saladier avec les framboises (en réserver quelques unes pour la décoration) et les bananes coupées en petits morceaux.\nIncorporer les yaourts et bien mélanger.\nRemplir les demi-melons avec la préparation et décorer éventuellement avec les framboises restantes.\nMettre au réfrigérateur 1 h et servir bien frais.'\nIngrédients:\n-",
+                "params": {
+                    "mode": "topk",
+                    "n_tokens": 25,
+                    "temperature": 0.5
+                    }
+                }
+},{
+    "title": "Recette de cuisine",
+    "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/chatbot_white.svg",
+    "description": "Muse peut te donner des idées de recettes à partir d'ingrédients !",
+    "color": "#19c37d",
+    "sandboxHeader": "Laisse Muse te donner des idées de recettes !",
+    "sampleResponse": "Je dispose des ingrédients suivants : des filets de poulet, de la crème, du beurre, 1 poivron rouge. \nJe veux les cuisiner.\nVoici la préparation :\n1.",
+    "tags": ["text-generation"],
+    "model": "lyra-fr",
+    "request": {"text": "Préparez le poulet. Coupez-le en cubes.\n2. Faites fondre le beurre et le poivron rouge dans une casserole.\n3. Ajoutez le poulet et faites cuire doucement.\n4. Ajoutez la crème et faites cuire",
+                "params": {
+                    "mode": "topk",
+                    "n_tokens": 50,
+                    "temperature": 0.6
+                    }
+                }
 }]
