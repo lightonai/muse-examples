@@ -390,14 +390,46 @@
     "description": "Muse peut te donner des idées de recettes à partir d'ingrédients !",
     "color": "#19c37d",
     "sandboxHeader": "Laisse Muse te donner des idées de recettes !",
-    "sampleResponse": "Je dispose des ingrédients suivants : des filets de poulet, de la crème, du beurre, 1 poivron rouge. \nJe veux les cuisiner.\nVoici la préparation :\n1.",
+    "sampleResponse": "Préparez le poulet. Coupez-le en cubes.\n2. Faites fondre le beurre et le poivron rouge dans une casserole.\n3. Ajoutez le poulet et faites cuire doucement.\n4. Ajoutez la crème et faites cuire",
     "tags": ["text-generation"],
     "model": "lyra-fr",
-    "request": {"text": "Préparez le poulet. Coupez-le en cubes.\n2. Faites fondre le beurre et le poivron rouge dans une casserole.\n3. Ajoutez le poulet et faites cuire doucement.\n4. Ajoutez la crème et faites cuire",
+    "request": {"text": "Je dispose des ingrédients suivants : des filets de poulet, de la crème, du beurre, 1 poivron rouge. \nJe veux les cuisiner.\nVoici la préparation :\n1.",
                 "params": {
                     "mode": "topk",
                     "n_tokens": 50,
                     "temperature": 0.6
+                    }
+                }
+},{
+    "title": "Guide touristique",
+    "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/chatbot_white.svg",
+    "description": "Demande à Muse de te donner une liste de lieux à visiter lors de tes prochaines vacances !",
+    "color": "#19c37d",
+    "sandboxHeader": "Muse - Guide touristique de l'année.",
+    "sampleResponse": "La Basilique Saint-Pierre\n- Le Colisée\n- Le Panthéon",
+    "tags": ["text-generation"],
+    "model": "lyra-fr",
+    "request": {"text": "Je vais à Rome. Voici 3 lieux à visiter :\n-",
+                "params": {
+                    "mode": "topk",
+                    "n_tokens": 15,
+                    "temperature": 0.6
+                    }
+                }
+},{
+    "title": "Coach sport et nutrition",
+    "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/chatbot_white.svg",
+    "description": "Muse peut te donner des conseils pour atteindre tes objectifs sportifs.",
+    "color": "#19c37d",
+    "sandboxHeader": "Pas besoin d'un coach quand on a Muse !",
+    "sampleResponse": "Se fixer des objectifs clairs et réalisables\n- Avoir une bonne hygiène de vie\n- Ne pas hésiter à faire des exercices physiques\n- Prendre des compléments alimentaires",
+    "tags": ["text-generation"],
+    "model": "lyra-fr",
+    "request": {"text": "Comment gagner en force ?\nVoici quelques conseils :\n-",
+                "params": {
+                    "mode": "topk",
+                    "n_tokens": 32,
+                    "temperature": 0.8
                     }
                 }
 }]
