@@ -4,7 +4,7 @@
     "sandboxHeader": "Discover Muse trying to match Marcel Proust!",
     "sampleResponse": "Sample response",
     "tags": ["text-generation"],
-    "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/signature_white.svg",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/text.svg",
     "description": "Write like one of the most influential authors of the 20th century.",
     "model": "orion-fr",
     "request": {"text": "C'était un temps que je connaissais ; j'eus la sensation et le pressentiment que le jour de l'An n'était pas un jour différent des autres, qu'il n'était pas le premier d'un monde nouveau",
@@ -17,7 +17,7 @@
                 }
 },{
     "title": "Eve, the Python Chatbot",
-    "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/chatbot_white.svg",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/chatbot.svg",
     "description": "Get help with Python from the chatbot Eve.",
     "color": "#19c37d",
     "sandboxHeader": "Want to learn more about Python? Ask Muse!",
@@ -34,7 +34,7 @@
                 }
 },{
     "title": "Sentiment Analysis",
-    "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/chatbot_white.svg",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/chart-pie.svg",
     "description": "Classify the sentiment of reviews with Muse.",
     "color": "#19c37d",
     "sandboxHeader": "Is this review positive or negative? Muse can answer!",
@@ -50,7 +50,7 @@
                 }
 },{
     "title": "Open-ended Classification",
-    "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/chatbot_white.svg",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/classification.svg",
     "description": "Open-ended classification",
     "color": "#19c37d",
     "sandboxHeader": "Muse understands what you want. Just ask for it!",
@@ -66,7 +66,7 @@
                 }
 },{
     "title": "Text Autocorrect",
-    "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/chatbot_white.svg",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/autocorrect.svg",
     "description": "Correct your grammar.",
     "color": "#19c37d",
     "sandboxHeader": "A doubt on your grammar? Here to help!",
@@ -82,7 +82,7 @@
                 }
 },{
     "title": "Keyword Retrieval",
-    "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/chatbot_white.svg",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/keywords.svg",
     "description": "Retrieve keywords from a text.",
     "color": "#19c37d",
     "sandboxHeader": "Need some keywords! Ready for extraction!",
@@ -99,7 +99,7 @@
                 }
 },{
     "title": "Faktengenerator",
-    "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/chatbot_white.svg",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/text.svg",
     "description": "Generiere interessante Fakten über ein beliebiges Thema.",
     "color": "#19c37d",
     "sandboxHeader": "Faktengenerator",
@@ -116,7 +116,7 @@
                 }
 },{
     "title": "Geographiewissen",
-    "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/chatbot_white.svg",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/qa.svg",
     "description": "Frage nach Fakten über Hauptstädte von Ländern, Höhe von Bergen, etc.",
     "color": "#19c37d",
     "sandboxHeader": "Geographiewissen",
@@ -133,7 +133,7 @@
                 }
 },{
     "title": "Wer war ...?",
-    "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/chatbot_white.svg",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/qa.svg",
     "description": "Wer war Konrad Adenauer?",
     "color": "#19c37d",
     "sandboxHeader": "Wer war ...?",
@@ -150,7 +150,7 @@
                 }
 },{
     "title": "Was ist die Hauptstadt von ...?",
-    "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/chatbot_white.svg",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/qa.svg",
     "description": "Frage Muse nach der Hauptstadt eines Landes.",
     "color": "#19c37d",
     "sandboxHeader": "Was ist die Hauptstadt von ...?",
@@ -171,7 +171,7 @@
     "sandboxHeader": "Use Muse to Generate Names for Art Pieces",
     "sampleResponse": "L'oiseau de feu.",
     "tags": ["text-generation"],
-    "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/signature_white.svg",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/text.svg",
     "description": "Describe your paintings to generate candidate names.",
     "model": "orion-fr",
     "request": {"text": "Génère un titre correspondant à la peinture décrite.\n***\nDescription: Au premier plan, il y a un arbre et derrière se trouve une ville de nuit avec un magnifique ciel rempli d’étoiles.\nTitre: La nuit étoilée.\n***\nDescription: On voit le portrait d'une jeune femme, sur fond d'un paysage montagneux aux horizons lointains et brumeux.\nTitre: La Joconde.\n***\nDescription: Il y a une très grande vague sur laquelle se trouve une barque et plein de petites vagues.\nTitre: La grande vague.\n***\nDescription: Quelques bateaux flottent sur l'eau avec, à l'horizon, un fond flou et un grand soleil rouge éclairant l'eau.\nTitre: ",
@@ -184,7 +184,7 @@
                 }
 },{
     "title": "Classification de critiques",
-    "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/chatbot_white.svg",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/classification.svg",
     "description": "Classifie des critiques de films avec Muse.",
     "color": "#19c37d",
     "sandboxHeader": "Cette critique est-elle positive ou négative ? Muse le sait !",
@@ -200,7 +200,7 @@
                 }
 },{
     "title": "Questions et réponses",
-    "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/chatbot_white.svg",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/qa.svg",
     "description": "Utilise Muse pour répondre à des questions de culture générale.",
     "color": "#19c37d",
     "sandboxHeader": "Une question de culture générale ? Demande à Muse la réponse !",
@@ -216,7 +216,7 @@
                 }
 },{
     "title": "Extraction de mots-clés",
-    "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/chatbot_white.svg",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/keywords.svg",
     "description": "Extrais les mots-clés d'un article.",
     "color": "#19c37d",
     "sandboxHeader": "Besoin de mots-clés pour trier des documents ? Utilise Muse !",
@@ -238,7 +238,7 @@
     "sandboxHeader": "En manque d'inspiration ? Muse peut donner des idées !",
     "sampleResponse": "La peinture sur toile\n- Les peintres impressionnistes\n- Les peintres modernes\n- Les secrets de la peinture à l'aquarelle\n- L'aquarelle et l'aquarelle picturale\n",
     "tags": ["text-generation"],
-    "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/signature_white.svg",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/text.svg",
     "description": "Utilise Muse pour générer une liste d'idées d'articles sur un sujet donné.",
     "model": "orion-fr",
     "request": {"text": "L'aquarelle entre peinture et poésie\n- Aquarelle et nature\n- L'aquarelle en vidéo\n- Les techniques et artistes\n- Les peintres aquarellistes\n",
@@ -255,7 +255,7 @@
     "sandboxHeader": "Réponds à des commentaires clients avec Muse !",
     "sampleResponse": "Nous sommes très heureux de vous compter parmi nos clients ! Nous sommes ravis que vous ayez apprécié notre restaurant",
     "tags": ["text-generation"],
-    "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/signature_white.svg",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/chatbot.svg",
     "description": "Utilise Muse pour répondre à des commentaires clients.",
     "model": "orion-fr",
     "request": {"text": "Réponds aux avis clients suivants.\n###\nAvis: Ça fait plusieurs fois que je viens et je n’ai jamais été déçue. L’accueil est chaleureux, les pizzas sont juste parfaites. J’ai enfin goûté un dessert et il était largement à la hauteur du reste ! Bref, au top, j’y retournerai bientôt !\nRéponse: Wow, nous sommes très touchés par votre commentaire ! Un grand merci à vous et à très bientôt !\n###\nAvis: Décevant surtout au vu de la bonne note du resto, je m'attendais à me régaler mais pas vraiment. Le tiramisu, certes bien garni, était très liquide, on aurait dit que c'était mélangé avec de l'eau, et pas très bon. \nRéponse: Nous sommes désolés de ne pas avoir répondu à vos attentes. Nous espérons que vous nous donnerez une autre chance bientôt.\n###\nAvis: Super pizzeria ! Accueil sympathique. On y va souvent mais on ne s'en lasse pas !\nRéponse:",
@@ -267,8 +267,8 @@
                     }
                 }
 },{
-    "title": "Classificare frasi",
-    "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/signature_white.svg",
+    "title": "Classificatore di recensioni",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/classification.svg",
     "description": "Un esempio su recensioni di libri",
     "color": "#19c37d",
     "sandboxHeader": "Recensioni",
@@ -284,8 +284,8 @@
                     }
                 }
 },{
-    "title": "Q&A",
-    "img": "put_an_image_of_the_Coliseum.png",
+    "title": "Domanda & risposta",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/qa.svg",
     "description": "Rispondere a domande sul contenuto di un testo",
     "color": "#19c37d",
     "sandboxHeader": "Rispondi a una domanda su un testo",
@@ -301,8 +301,8 @@
                     }
                 }
 },{
-    "title": "Generare parole chiave",
-    "img": "image_of_the_Alps.png",
+    "title": "Generatore di parole chiave",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/keywords.svg",
     "description": "Estrarre parole chiavi da un testo",
     "color": "#19c37d",
     "sandboxHeader": "Le Alpi",
@@ -318,8 +318,8 @@
                 }
             }
 },{
-    "title": "Q&A",
-    "img": "image_of_Spain.png",
+    "title": "Preguntas y respuestas",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/qa.svg",
     "description": "Responde una pregunta",
     "color": "#19c37d",
     "sandboxHeader": "Responde una pregunta",
@@ -335,8 +335,8 @@
                 }
             }
 },{
-    "title": "Palabras clave",
-    "img": "image_of_Picasso.png",
+    "title": "Generar palabras clave",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/keywords.svg",
     "description": "Palabras clave de un texto",
     "color": "#19c37d",
     "sandboxHeader": "Palabras clave de un texto",
@@ -353,7 +353,7 @@
             }
 },{
     "title": "Generar sinónimos",
-    "img": "no_idea.png",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/text.svg",
     "description": "",
     "color": "#19c37d",
     "sandboxHeader": "Generar sinónimos de una palabra",
@@ -370,7 +370,7 @@
             }
 },{
     "title": "Liste d'ingrédients",
-    "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/chatbot_white.svg",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/chatbot.svg",
     "description": "Utilise Muse pour générer la liste des ingrédients utilisés dans une recette !",
     "color": "#19c37d",
     "sandboxHeader": "Demande à Muse de gérer ta liste de courses !",
@@ -386,7 +386,7 @@
                 }
 },{
     "title": "Recette de cuisine",
-    "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/chatbot_white.svg",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/chatbot.svg",
     "description": "Muse peut te donner des idées de recettes à partir d'ingrédients !",
     "color": "#19c37d",
     "sandboxHeader": "Laisse Muse te donner des idées de recettes !",
@@ -402,7 +402,7 @@
                 }
 },{
     "title": "Guide touristique",
-    "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/chatbot_white.svg",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/chatbot.svg",
     "description": "Demande à Muse de te donner une liste de lieux à visiter lors de tes prochaines vacances !",
     "color": "#19c37d",
     "sandboxHeader": "Muse - Guide touristique de l'année.",
@@ -418,7 +418,7 @@
                 }
 },{
     "title": "Coach sport et nutrition",
-    "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/chatbot_white.svg",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/chatbot.svg",
     "description": "Muse peut te donner des conseils pour atteindre tes objectifs sportifs.",
     "color": "#19c37d",
     "sandboxHeader": "Pas besoin d'un coach quand on a Muse !",
