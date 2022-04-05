@@ -1,6 +1,6 @@
 [{
     "title": "Write like Proust",
-    "color": "#5436da",
+    "color": "#19c37d",
     "sandboxHeader": "Discover Muse trying to match Marcel Proust!",
     "sampleResponse": "Sample response",
     "tags": ["text-generation"],
