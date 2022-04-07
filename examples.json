@@ -41,7 +41,7 @@
     "sampleResponse": "Negative.",
     "tags": ["sentiment-analysis"],
     "model": "lyra-en",
-    "request": {"text": "This is a review sentiment classifier.\n\nReview: 'The new Dune movie is great!'\nSentiment: Positive.\n###\nReview: 'Suicide Squad was an awful movie, that's 2 hours of my life I won't get back...'\nSentiment: Negative.\n###\nReview: 'Wooh, just came out of Interstellar and it was amazing.'\nSentiment: Positive.\n###\nReview: 'TBH Squid Game wasn't worth my time.'\nSentiment:",
+    "request": {"text": "This is a review sentiment classifier.\n\nReview: 'The new Dune movie is great!'\nSentiment: Positive.\n***\nReview: 'Suicide Squad was an awful movie, that's 2 hours of my life I won't get back...'\nSentiment: Negative.\n***\nReview: 'Wooh, just came out of Interstellar and it was amazing.'\nSentiment: Positive.\n***\nReview: 'TBH Squid Game wasn't worth my time.'\nSentiment:",
                 "params": {
                     "mode": "nucleus",
                     "n_tokens": 2,
@@ -258,7 +258,7 @@
     "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/chatbot.svg",
     "description": "Utilise Muse pour répondre à des commentaires clients.",
     "model": "orion-fr",
-    "request": {"text": "Réponds aux avis clients suivants.\n###\nAvis: Ça fait plusieurs fois que je viens et je n’ai jamais été déçue. L’accueil est chaleureux, les pizzas sont juste parfaites. J’ai enfin goûté un dessert et il était largement à la hauteur du reste ! Bref, au top, j’y retournerai bientôt !\nRéponse: Wow, nous sommes très touchés par votre commentaire ! Un grand merci à vous et à très bientôt !\n###\nAvis: Décevant surtout au vu de la bonne note du resto, je m'attendais à me régaler mais pas vraiment. Le tiramisu, certes bien garni, était très liquide, on aurait dit que c'était mélangé avec de l'eau, et pas très bon. \nRéponse: Nous sommes désolés de ne pas avoir répondu à vos attentes. Nous espérons que vous nous donnerez une autre chance bientôt.\n###\nAvis: Super pizzeria ! Accueil sympathique. On y va souvent mais on ne s'en lasse pas !\nRéponse:",
+    "request": {"text": "Réponds aux avis clients suivants.\n***\nAvis: Ça fait plusieurs fois que je viens et je n’ai jamais été déçue. L’accueil est chaleureux, les pizzas sont juste parfaites. J’ai enfin goûté un dessert et il était largement à la hauteur du reste ! Bref, au top, j’y retournerai bientôt !\nRéponse: Wow, nous sommes très touchés par votre commentaire ! Un grand merci à vous et à très bientôt !\n***\nAvis: Décevant surtout au vu de la bonne note du resto, je m'attendais à me régaler mais pas vraiment. Le tiramisu, certes bien garni, était très liquide, on aurait dit que c'était mélangé avec de l'eau, et pas très bon. \nRéponse: Nous sommes désolés de ne pas avoir répondu à vos attentes. Nous espérons que vous nous donnerez une autre chance bientôt.\n***\nAvis: Super pizzeria ! Accueil sympathique. On y va souvent mais on ne s'en lasse pas !\nRéponse:",
                 "params": {
                     "mode": "topk",
                     "n_tokens": 20,
