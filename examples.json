@@ -6,12 +6,12 @@
     "tags": ["text-generation"],
     "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/text.svg",
     "description": "Write like one of the most influential authors of the 20th century.",
-    "model": "orion-fr",
+    "model": "lyra-fr",
     "request": {"text": "C'était un temps que je connaissais ; j'eus la sensation et le pressentiment que le jour de l'An n'était pas un jour différent des autres, qu'il n'était pas le premier d'un monde nouveau",
                 "params": {
                     "mode": "nucleus",
                     "n_tokens": 50,
-                    "p": 0.9,
+                    "p": 0.8,
                     "temperature": 1.0
                     }
                 }
@@ -173,19 +173,19 @@
     "tags": ["text-generation"],
     "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/text.svg",
     "description": "Describe your paintings to generate candidate names.",
-    "model": "orion-fr",
+    "model": "lyra-fr",
     "request": {"text": "Génère un titre correspondant à la peinture décrite.\n***\nDescription: Au premier plan, il y a un arbre et derrière se trouve une ville de nuit avec un magnifique ciel rempli d’étoiles.\nTitre: La nuit étoilée.\n***\nDescription: On voit le portrait d'une jeune femme, sur fond d'un paysage montagneux aux horizons lointains et brumeux.\nTitre: La Joconde.\n***\nDescription: Il y a une très grande vague sur laquelle se trouve une barque et plein de petites vagues.\nTitre: La grande vague.\n***\nDescription: Quelques bateaux flottent sur l'eau avec, à l'horizon, un fond flou et un grand soleil rouge éclairant l'eau.\nTitre: ",
                 "params": {
                     "mode": "nucleus",
                     "n_tokens": 5,
-                    "p": 0.9,
+                    "p": 0.8,
                     "temperature": 1.0
                     }
                 }
 },{
     "title": "Classification de critiques",
     "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/classification.svg",
-    "description": "Classifie des critiques de films avec Muse.",
+    "description": "Classifiez des critiques de films avec Muse.",
     "color": "#6816af",
     "sandboxHeader": "Cette critique est-elle positive ou négative ? Muse le sait !",
     "sampleResponse": "positive.",
@@ -201,9 +201,9 @@
 },{
     "title": "Questions et réponses",
     "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/qa.svg",
-    "description": "Utilise Muse pour répondre à des questions de culture générale.",
+    "description": "Utilisez Muse pour répondre à des questions de culture générale.",
     "color": "#6816af",
-    "sandboxHeader": "Une question de culture générale ? Demande à Muse la réponse !",
+    "sandboxHeader": "Une question de culture générale ? Demandez à Muse la réponse !",
     "sampleResponse": "La datation par le carbone 14 est une méthode de datation radiométrique. Le carbone 14 est un isotope radioactif du carbone. Il est utilisé pour dater les objets archéologiques, les restes d'animaux et les sédiments",
     "tags": ["question-answering"],
     "model": "lyra-fr",
@@ -217,9 +217,9 @@
 },{
     "title": "Extraction de mots-clés",
     "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/keywords.svg",
-    "description": "Extrais les mots-clés d'un article.",
+    "description": "Muse peut extraire les mots-clés d'un article.",
     "color": "#19c37d",
-    "sandboxHeader": "Besoin de mots-clés pour trier des documents ? Utilise Muse !",
+    "sandboxHeader": "Besoin de mots-clés pour trier des documents ? Utilisez Muse !",
     "sampleResponse": "Corium, fusion nucléaire, réacteur nucléaire, combustible",
     "tags": ["keywords-retrieval"],
     "model": "lyra-fr",
@@ -236,28 +236,27 @@
     "title": "Génération d'idées d'articles",
     "color": "#6816af",
     "sandboxHeader": "En manque d'inspiration ? Muse peut donner des idées !",
-    "sampleResponse": "La peinture sur toile\n- Les peintres impressionnistes\n- Les peintres modernes\n- Les secrets de la peinture à l'aquarelle\n- L'aquarelle et l'aquarelle picturale\n",
+    "sampleResponse": "L'aquarelle entre peinture et poésie\n- Aquarelle et nature\n- L'aquarelle en vidéo\n- Les techniques et artistes\n- Les peintres aquarellistes\n",
     "tags": ["text-generation"],
     "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/text.svg",
-    "description": "Utilise Muse pour générer une liste d'idées d'articles sur un sujet donné.",
-    "model": "orion-fr",
-    "request": {"text": "L'aquarelle entre peinture et poésie\n- Aquarelle et nature\n- L'aquarelle en vidéo\n- Les techniques et artistes\n- Les peintres aquarellistes\n",
+    "description": "Utilisez Muse pour générer une liste d'idées d'articles sur un sujet donné.",
+    "model": "lyra-fr",
+    "request": {"text": "Génère une liste d'idées d'articles sur l'aquarelle.\n\n- L'aquarelle dans l'histoire\n- ",
                 "params": {
-                    "mode": "nucleus",
+                    "mode": "topk",
                     "n_tokens": 40,
-                    "p": 0.9,
                     "temperature": 1.0
                     }
                 }
 },{
-    "title": "Réponds à des commentaires clients",
+    "title": "Répondez à des commentaires clients",
     "color": "#6816af",
-    "sandboxHeader": "Réponds à des commentaires clients avec Muse !",
-    "sampleResponse": "Nous sommes très heureux de vous compter parmi nos clients ! Nous sommes ravis que vous ayez apprécié notre restaurant",
+    "sandboxHeader": "Répondez à des commentaires clients avec Muse !",
+    "sampleResponse": "Merci à vous pour ce compliment ! Nous espérons que nous aurons le plaisir de vous y revoir bientôt.",
     "tags": ["text-generation"],
     "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/chatbot.svg",
-    "description": "Utilise Muse pour répondre à des commentaires clients.",
-    "model": "orion-fr",
+    "description": "Utilisez Muse pour répondre à des commentaires clients.",
+    "model": "lyra-fr",
     "request": {"text": "Réponds aux avis clients suivants.\n***\nAvis: Ça fait plusieurs fois que je viens et je n’ai jamais été déçue. L’accueil est chaleureux, les pizzas sont juste parfaites. J’ai enfin goûté un dessert et il était largement à la hauteur du reste ! Bref, au top, j’y retournerai bientôt !\nRéponse: Wow, nous sommes très touchés par votre commentaire ! Un grand merci à vous et à très bientôt !\n***\nAvis: Décevant surtout au vu de la bonne note du resto, je m'attendais à me régaler mais pas vraiment. Le tiramisu, certes bien garni, était très liquide, on aurait dit que c'était mélangé avec de l'eau, et pas très bon. \nRéponse: Nous sommes désolés de ne pas avoir répondu à vos attentes. Nous espérons que vous nous donnerez une autre chance bientôt.\n***\nAvis: Super pizzeria ! Accueil sympathique. On y va souvent mais on ne s'en lasse pas !\nRéponse:",
                 "params": {
                     "mode": "topk",
