@@ -1,11 +1,11 @@
 [{
-    "title": "Write like Proust",
+    "title": "Inspiration de Proust",
     "color": "#6816af",
-    "sandboxHeader": "Discover Muse trying to match Marcel Proust!",
-    "sampleResponse": "Sample response",
+    "sandboxHeader": "Muse peut s'inspirer de Marcel Proust !",
+    "sampleResponse": ", mais seulement le dernier d'un monde qui avait déjà fait son temps. Le traîneau s'arrêta devant la porte de l'hôtel. Je sautai à terre et pénétrai dans le hall où quelques pensionnaires lisaient des journaux.",
     "tags": ["text-generation"],
     "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/text.svg",
-    "description": "Write like one of the most influential authors of the 20th century.",
+    "description": "Écrivez dans de style d'un des auteurs les plus influents du XXe siècle.",
     "model": "lyra-fr",
     "request": {"text": "C'était un temps que je connaissais ; j'eus la sensation et le pressentiment que le jour de l'An n'était pas un jour différent des autres, qu'il n'était pas le premier d'un monde nouveau",
                 "params": {
@@ -51,7 +51,7 @@
 },{
     "title": "Open-ended Classification",
     "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/classification.svg",
-    "description": "Open-ended classification",
+    "description": "Open-ended classification.",
     "color": "#70c5eb",
     "sandboxHeader": "Muse understands what you want. Just ask for it!",
     "sampleResponse": "Search, Internet",
@@ -120,7 +120,7 @@
     "description": "Frage nach Fakten über Hauptstädte von Ländern, Höhe von Bergen, etc.",
     "color": "#5B57C0",
     "sandboxHeader": "Geographiewissen",
-    "sampleResponse": "Die Zugspitze ist mit einer Höhe von 2.962 m der höchste Berg Deutschlands. Sie",
+    "sampleResponse": "Die Zugspitze ist mit einer Höhe von 2.962 m der höchste Berg Deutschlands.",
     "tags": ["question-answering"],
     "model": "auriga-de",
     "request": {"text": "Wie hoch ist die Zugspitze?",
@@ -166,13 +166,13 @@
                     }
                 }
 },{
-    "title": "Find Inspiration for Art Names",
+    "title": "Nom d'une œuvre d'art",
     "color": "#6816af",
-    "sandboxHeader": "Use Muse to Generate Names for Art Pieces",
+    "sandboxHeader": "Muse peut nommer des œuvres d'art !",
     "sampleResponse": "L'oiseau de feu.",
     "tags": ["text-generation"],
     "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/text.svg",
-    "description": "Describe your paintings to generate candidate names.",
+    "description": "À partir de la description d'une œuvre, Muse peut générer des idées de noms.",
     "model": "lyra-fr",
     "request": {"text": "Génère un titre correspondant à la peinture décrite.\n***\nDescription: Au premier plan, il y a un arbre et derrière se trouve une ville de nuit avec un magnifique ciel rempli d’étoiles.\nTitre: La nuit étoilée.\n***\nDescription: On voit le portrait d'une jeune femme, sur fond d'un paysage montagneux aux horizons lointains et brumeux.\nTitre: La Joconde.\n***\nDescription: Il y a une très grande vague sur laquelle se trouve une barque et plein de petites vagues.\nTitre: La grande vague.\n***\nDescription: Quelques bateaux flottent sur l'eau avec, à l'horizon, un fond flou et un grand soleil rouge éclairant l'eau.\nTitre: ",
                 "params": {
