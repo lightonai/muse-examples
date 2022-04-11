@@ -2,7 +2,7 @@
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)  [![Twitter](https://img.shields.io/twitter/follow/LightOnIO?style=social)](https://twitter.com/LightOnIO)
 
-This repository contains examples for the models in [Muse](https://muse.lighton.ai/).
+This repository contains examples for the models in [Muse](https://muse.lighton.ai/), which is currently in public beta.
 
 ## Adding an example
 
