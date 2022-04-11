@@ -218,7 +218,7 @@
     "title": "Extraction de mots-clés",
     "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/keywords.svg",
     "description": "Muse peut extraire les mots-clés d'un article.",
-    "color": "#19c37d",
+    "color": "#6816af",
     "sandboxHeader": "Besoin de mots-clés pour trier des documents ? Utilisez Muse !",
     "sampleResponse": "Corium, fusion nucléaire, réacteur nucléaire, combustible",
     "tags": ["keywords-retrieval"],
