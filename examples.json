@@ -1,25 +1,25 @@
 [{
-    "title": "Write like Proust",
-    "color": "#5436da",
-    "sandboxHeader": "Discover Muse trying to match Marcel Proust!",
-    "sampleResponse": "Sample response",
+    "title": "Inspiration de Proust",
+    "color": "#6816af",
+    "sandboxHeader": "Muse peut s'inspirer de Marcel Proust !",
+    "sampleResponse": ", mais seulement le dernier d'un monde qui avait déjà fait son temps. Le traîneau s'arrêta devant la porte de l'hôtel. Je sautai à terre et pénétrai dans le hall où quelques pensionnaires lisaient des journaux.",
     "tags": ["text-generation"],
-    "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/signature_white.svg",
-    "description": "Write like one of the most influential authors of the 20th century.",
-    "model": "orion-fr",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/text.svg",
+    "description": "Écrivez dans de style d'un des auteurs les plus influents du XXe siècle.",
+    "model": "lyra-fr",
     "request": {"text": "C'était un temps que je connaissais ; j'eus la sensation et le pressentiment que le jour de l'An n'était pas un jour différent des autres, qu'il n'était pas le premier d'un monde nouveau",
                 "params": {
                     "mode": "nucleus",
                     "n_tokens": 50,
-                    "p": 0.9,
+                    "p": 0.8,
                     "temperature": 1.0
                     }
                 }
 },{
     "title": "Eve, the Python Chatbot",
-    "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/chatbot_white.svg",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/chatbot.svg",
     "description": "Get help with Python from the chatbot Eve.",
-    "color": "#19c37d",
+    "color": "#70c5eb",
     "sandboxHeader": "Want to learn more about Python? Ask Muse!",
     "sampleResponse": "You can use the pop() method.",
     "tags": ["chatbot"],
@@ -34,14 +34,14 @@
                 }
 },{
     "title": "Sentiment Analysis",
-    "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/chatbot_white.svg",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/chart-pie.svg",
     "description": "Classify the sentiment of reviews with Muse.",
-    "color": "#19c37d",
+    "color": "#70c5eb",
     "sandboxHeader": "Is this review positive or negative? Muse can answer!",
     "sampleResponse": "Negative.",
     "tags": ["sentiment-analysis"],
     "model": "lyra-en",
-    "request": {"text": "This is a review sentiment classifier.\n\nReview: 'The new Dune movie is great!'\nSentiment: Positive.\n###\nReview: 'Suicide Squad was an awful movie, that's 2 hours of my life I won't get back...'\nSentiment: Negative.\n###\nReview: 'Wooh, just came out of Interstellar and it was amazing.'\nSentiment: Positive.\n###\nReview: 'TBH Squid Game wasn't worth my time.'\nSentiment:",
+    "request": {"text": "This is a review sentiment classifier.\n\nReview: 'The new Dune movie is great!'\nSentiment: Positive.\n***\nReview: 'Suicide Squad was an awful movie, that's 2 hours of my life I won't get back...'\nSentiment: Negative.\n***\nReview: 'Wooh, just came out of Interstellar and it was amazing.'\nSentiment: Positive.\n***\nReview: 'TBH Squid Game wasn't worth my time.'\nSentiment:",
                 "params": {
                     "mode": "nucleus",
                     "n_tokens": 2,
@@ -50,9 +50,9 @@
                 }
 },{
     "title": "Open-ended Classification",
-    "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/chatbot_white.svg",
-    "description": "Open-ended classification",
-    "color": "#19c37d",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/classification.svg",
+    "description": "Open-ended classification.",
+    "color": "#70c5eb",
     "sandboxHeader": "Muse understands what you want. Just ask for it!",
     "sampleResponse": "Search, Internet",
     "tags": ["sentiment-analysis"],
@@ -66,9 +66,9 @@
                 }
 },{
     "title": "Text Autocorrect",
-    "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/chatbot_white.svg",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/autocorrect.svg",
     "description": "Correct your grammar.",
-    "color": "#19c37d",
+    "color": "#70c5eb",
     "sandboxHeader": "A doubt on your grammar? Here to help!",
     "sampleResponse": "Can we use their house?",
     "tags": ["autocorrect"],
@@ -82,9 +82,9 @@
                 }
 },{
     "title": "Keyword Retrieval",
-    "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/chatbot_white.svg",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/keywords.svg",
     "description": "Retrieve keywords from a text.",
-    "color": "#19c37d",
+    "color": "#70c5eb",
     "sandboxHeader": "Need some keywords! Ready for extraction!",
     "sampleResponse": "DART, Planetary Defense, Asteroid, Didymos, Moon",
     "tags": ["keywords-retrieval"],
@@ -99,9 +99,9 @@
                 }
 },{
     "title": "Faktengenerator",
-    "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/chatbot_white.svg",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/text.svg",
     "description": "Generiere interessante Fakten über ein beliebiges Thema.",
-    "color": "#19c37d",
+    "color": "#5B57C0",
     "sandboxHeader": "Faktengenerator",
     "sampleResponse": "Berlin ist eine Stadt, die für ihre berühmten Sehenswürdigkeiten bekannt ist. Die Geschichte Berlins reicht bis ins 12. Jahrhundert zurück, als es von der Hanse gegründet wurde. Zu den berühmtesten Sehenswürdigkeiten gehören die Museumsinsel, das Brandenburger Tor und der Reichstag.",
     "tags": ["question-answering"],
@@ -116,11 +116,11 @@
                 }
 },{
     "title": "Geographiewissen",
-    "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/chatbot_white.svg",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/qa.svg",
     "description": "Frage nach Fakten über Hauptstädte von Ländern, Höhe von Bergen, etc.",
-    "color": "#19c37d",
+    "color": "#5B57C0",
     "sandboxHeader": "Geographiewissen",
-    "sampleResponse": "Die Zugspitze ist mit einer Höhe von 2.962 m der höchste Berg Deutschlands. Sie",
+    "sampleResponse": "Die Zugspitze ist mit einer Höhe von 2.962 m der höchste Berg Deutschlands.",
     "tags": ["question-answering"],
     "model": "auriga-de",
     "request": {"text": "Wie hoch ist die Zugspitze?",
@@ -133,9 +133,9 @@
                 }
 },{
     "title": "Wer war ...?",
-    "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/chatbot_white.svg",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/qa.svg",
     "description": "Wer war Konrad Adenauer?",
-    "color": "#19c37d",
+    "color": "#5B57C0",
     "sandboxHeader": "Wer war ...?",
     "sampleResponse": "Konrad Adenauer war ein deutscher Politiker der CDU. Er war von 1949 bis 1963 Bundeskanzler der Bundesrepublik Deutschland. Konrad Adenauer wurde",
     "tags": ["question-answering"],
@@ -150,9 +150,9 @@
                 }
 },{
     "title": "Was ist die Hauptstadt von ...?",
-    "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/chatbot_white.svg",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/qa.svg",
     "description": "Frage Muse nach der Hauptstadt eines Landes.",
-    "color": "#19c37d",
+    "color": "#5B57C0",
     "sandboxHeader": "Was ist die Hauptstadt von ...?",
     "sampleResponse": "Die Hauptstadt von Belgien ist Brüssel.",
     "tags": ["question-answering"],
@@ -166,31 +166,31 @@
                     }
                 }
 },{
-    "title": "Find Inspiration for Art Names",
-    "color": "#19c37d",
-    "sandboxHeader": "Use Muse to Generate Names for Art Pieces",
+    "title": "Nom d'une œuvre d'art",
+    "color": "#6816af",
+    "sandboxHeader": "Muse peut nommer des œuvres d'art !",
     "sampleResponse": "L'oiseau de feu.",
     "tags": ["text-generation"],
-    "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/signature_white.svg",
-    "description": "Describe your paintings to generate candidate names.",
-    "model": "orion-fr",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/text.svg",
+    "description": "À partir de la description d'une œuvre, Muse peut générer des idées de noms.",
+    "model": "lyra-fr",
     "request": {"text": "Génère un titre correspondant à la peinture décrite.\n***\nDescription: Au premier plan, il y a un arbre et derrière se trouve une ville de nuit avec un magnifique ciel rempli d’étoiles.\nTitre: La nuit étoilée.\n***\nDescription: On voit le portrait d'une jeune femme, sur fond d'un paysage montagneux aux horizons lointains et brumeux.\nTitre: La Joconde.\n***\nDescription: Il y a une très grande vague sur laquelle se trouve une barque et plein de petites vagues.\nTitre: La grande vague.\n***\nDescription: Quelques bateaux flottent sur l'eau avec, à l'horizon, un fond flou et un grand soleil rouge éclairant l'eau.\nTitre: ",
                 "params": {
                     "mode": "nucleus",
                     "n_tokens": 5,
-                    "p": 0.9,
+                    "p": 0.8,
                     "temperature": 1.0
                     }
                 }
 },{
     "title": "Classification de critiques",
-    "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/chatbot_white.svg",
-    "description": "Classifie des critiques de films avec Muse.",
-    "color": "#19c37d",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/classification.svg",
+    "description": "Classifiez des critiques de films avec Muse.",
+    "color": "#6816af",
     "sandboxHeader": "Cette critique est-elle positive ou négative ? Muse le sait !",
     "sampleResponse": "positive.",
     "tags": ["sentiment-analysis"],
-    "model": "orion-fr",
+    "model": "lyra-fr",
     "request": {"text": "Détermine si ces critiques de film sont positives ou négatives.\n\nCritique: 'Un film touchant et riche en rebondissements.'\nCette critique est positive.\n----------\nCritique: 'Certaines répliques font vraiment rire, mais la mise en scène manque d'inventivité pour soutenir le rythme de la comédie.'\nCette critique est négative.\n----------\nCritique: 'La nullité du film dépasse à tous les niveaux ce que nous avions essayé de prévoir à travers les hallucinantes bandes-annonces diffusées sur le net.' \nCette critique est négative.\n----------\nCritique: 'Steven Spielberg, en misant sur l'authenticité, a signé un film qui frappe remarquablement juste.' \nCette critique est ",
                 "params": {
                     "mode": "nucleus",
@@ -200,77 +200,76 @@
                 }
 },{
     "title": "Questions et réponses",
-    "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/chatbot_white.svg",
-    "description": "Utilise Muse pour répondre à des questions de culture générale.",
-    "color": "#19c37d",
-    "sandboxHeader": "Une question de culture générale ? Demande à Muse la réponse !",
-    "sampleResponse": "Le carbone 14 est un isotope radioactif du carbone, qui se désintègre à des taux différents selon la nature de l'échantillon. Il est utilisé pour dater les vestiges archéologiques.",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/qa.svg",
+    "description": "Utilisez Muse pour répondre à des questions de culture générale.",
+    "color": "#6816af",
+    "sandboxHeader": "Une question de culture générale ? Demandez à Muse la réponse !",
+    "sampleResponse": "La datation par le carbone 14 est une méthode de datation radiométrique. Le carbone 14 est un isotope radioactif du carbone. Il est utilisé pour dater les objets archéologiques, les restes d'animaux et les sédiments",
     "tags": ["question-answering"],
-    "model": "orion-fr",
+    "model": "lyra-fr",
     "request": {"text": "Question: Qu'est-ce que la datation par le carbone 14 ?\nRéponse:",
                 "params": {
-                    "mode": "nucleus",
-                    "n_tokens": 50,
-                    "temperature": 0.5
+                    "mode": "topk",
+                    "n_tokens": 45,
+                    "temperature": 0.6
                     }
                 }
 },{
     "title": "Extraction de mots-clés",
-    "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/chatbot_white.svg",
-    "description": "Extrais les mots-clés d'un article.",
-    "color": "#19c37d",
-    "sandboxHeader": "Besoin de mots-clés pour trier des documents ? Utilise Muse !",
-    "sampleResponse": "corium, fusion nucléaire, combustible nucléaire, réacteur",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/keywords.svg",
+    "description": "Muse peut extraire les mots-clés d'un article.",
+    "color": "#6816af",
+    "sandboxHeader": "Besoin de mots-clés pour trier des documents ? Utilisez Muse !",
+    "sampleResponse": "Corium, fusion nucléaire, réacteur nucléaire, combustible",
     "tags": ["keywords-retrieval"],
-    "model": "orion-fr",
+    "model": "lyra-fr",
     "request": {"text": "Extrais les mots clés de l'article suivant: Le corium est un magma métallique et minéral constitué d'éléments fondus du cœur d'un réacteur nucléaire, puis des minéraux qu'il peut absorber lors de son trajet.  Le terme « corium » est un néologisme formé de core (en anglais, pour le cœur d'un réacteur nucléaire), suivi du suffixe -ium présent dans le nom de nombreux éléments du tableau périodique des éléments : lithium, calcium, uranium, plutonium, hélium, strontium, etc.  Initialement constitué du combustible nucléaire (principalement de l'oxyde d'uranium enrichi), des éléments de l'assemblage combustible et des divers équipements du cœur (barres de contrôle, instrumentation) ou de la paroi de la cuve du réacteur avec lesquels il entre en contact, il se forme à très haute température (environ 3 000 °C, température de fusion de l'oxyde d'uranium) quand le cœur n'est plus refroidi, comme lors d'accidents nucléaires tels ceux de Three Mile Island, de Tchernobyl, ou de Fukushima.\n\nMots-clés:",
                 "params": {
                     "mode": "topk",
                     "k": 5,
                     "n_tokens": 10,
-                    "temperature": 1.0,
+                    "temperature": 0.8,
                     "presence_penalty": 1.0
                     }
                 }
 },{
     "title": "Génération d'idées d'articles",
-    "color": "#19c37d",
+    "color": "#6816af",
     "sandboxHeader": "En manque d'inspiration ? Muse peut donner des idées !",
-    "sampleResponse": "La peinture sur toile\n- Les peintres impressionnistes\n- Les peintres modernes\n- Les secrets de la peinture à l'aquarelle\n- L'aquarelle et l'aquarelle picturale\n",
+    "sampleResponse": "L'aquarelle entre peinture et poésie\n- Aquarelle et nature\n- L'aquarelle en vidéo\n- Les techniques et artistes\n- Les peintres aquarellistes\n",
     "tags": ["text-generation"],
-    "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/signature_white.svg",
-    "description": "Utilise Muse pour générer une liste d'idées d'articles sur un sujet donné.",
-    "model": "orion-fr",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/text.svg",
+    "description": "Utilisez Muse pour générer une liste d'idées d'articles sur un sujet donné.",
+    "model": "lyra-fr",
     "request": {"text": "Génère une liste d'idées d'articles sur l'aquarelle.\n\n- L'aquarelle dans l'histoire\n- ",
                 "params": {
-                    "mode": "nucleus",
-                    "n_tokens": 45,
-                    "p": 0.9,
+                    "mode": "topk",
+                    "n_tokens": 40,
                     "temperature": 1.0
                     }
                 }
 },{
-    "title": "Réponds à des commentaires clients",
-    "color": "#19c37d",
-    "sandboxHeader": "Réponds à des commentaires clients avec Muse !",
-    "sampleResponse": "Merci à vous pour votre commentaire et votre confiance !",
+    "title": "Répondez à des commentaires clients",
+    "color": "#6816af",
+    "sandboxHeader": "Répondez à des commentaires clients avec Muse !",
+    "sampleResponse": "Merci à vous pour ce compliment ! Nous espérons que nous aurons le plaisir de vous y revoir bientôt.",
     "tags": ["text-generation"],
-    "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/signature_white.svg",
-    "description": "Utilise Muse pour répondre à des commentaires clients.",
-    "model": "orion-fr",
-    "request": {"text": "Réponds aux avis clients suivants.\n###\nAvis: Ça fait plusieurs fois que je viens et je n’ai jamais été déçue. L’accueil est chaleureux, les pizzas sont juste parfaites. J’ai enfin goûté un dessert et il était largement à la hauteur du reste ! Bref, au top, j’y retournerai bientôt !\nRéponse: Wow, nous sommes très touchés par votre commentaire ! Un grand merci à vous et à très bientôt !\n###\nAvis: Décevant surtout au vu de la bonne note du resto, je m'attendais à me régaler mais pas vraiment. Le tiramisu, certes bien garni, était très liquide, on aurait dit que c'était mélangé avec de l'eau, et pas très bon. \nRéponse: Nous sommes désolés de ne pas avoir répondu à vos attentes. Nous espérons que vous nous donnerez une autre chance bientôt.\n###\nAvis: Super pizzeria ! Accueil sympathique. On y va souvent mais on ne s'en lasse pas !\nRéponse:",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/chatbot.svg",
+    "description": "Utilisez Muse pour répondre à des commentaires clients.",
+    "model": "lyra-fr",
+    "request": {"text": "Réponds aux avis clients suivants.\n***\nAvis: Ça fait plusieurs fois que je viens et je n’ai jamais été déçue. L’accueil est chaleureux, les pizzas sont juste parfaites. J’ai enfin goûté un dessert et il était largement à la hauteur du reste ! Bref, au top, j’y retournerai bientôt !\nRéponse: Wow, nous sommes très touchés par votre commentaire ! Un grand merci à vous et à très bientôt !\n***\nAvis: Décevant surtout au vu de la bonne note du resto, je m'attendais à me régaler mais pas vraiment. Le tiramisu, certes bien garni, était très liquide, on aurait dit que c'était mélangé avec de l'eau, et pas très bon. \nRéponse: Nous sommes désolés de ne pas avoir répondu à vos attentes. Nous espérons que vous nous donnerez une autre chance bientôt.\n***\nAvis: Super pizzeria ! Accueil sympathique. On y va souvent mais on ne s'en lasse pas !\nRéponse:",
                 "params": {
-                    "mode": "nucleus",
+                    "mode": "topk",
                     "n_tokens": 20,
                     "p": 0.9,
                     "temperature": 0.8
                     }
                 }
 },{
-    "title": "Classificare frasi",
-    "img": "https://raw.githubusercontent.com/iacolippo/test-examples/master/assets/signature_white.svg",
+    "title": "Classificatore di recensioni",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/classification.svg",
     "description": "Un esempio su recensioni di libri",
-    "color": "#19c37d",
+    "color": "#a58efa",
     "sandboxHeader": "Recensioni",
     "sampleResponse": "Negativo.",
     "tags": ["sentiment-analysis"],
@@ -284,10 +283,10 @@
                     }
                 }
 },{
-    "title": "Q&A",
-    "img": "put_an_image_of_the_Coliseum.png",
+    "title": "Domanda & risposta",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/qa.svg",
     "description": "Rispondere a domande sul contenuto di un testo",
-    "color": "#19c37d",
+    "color": "#a58efa",
     "sandboxHeader": "Rispondi a una domanda su un testo",
     "sampleResponse": "i gladiatori",
     "tags": ["question-answering"],
@@ -301,10 +300,10 @@
                     }
                 }
 },{
-    "title": "Generare parole chiave",
-    "img": "image_of_the_Alps.png",
+    "title": "Generatore di parole chiave",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/keywords.svg",
     "description": "Estrarre parole chiavi da un testo",
-    "color": "#19c37d",
+    "color": "#a58efa",
     "sandboxHeader": "Le Alpi",
     "sampleResponse": "\n- Europa;\n- Italia;\n- Francia;\n- Svizzera;\n- Austria;",
     "tags": ["keywords-retrieval"],
@@ -318,10 +317,10 @@
                 }
             }
 },{
-    "title": "Q&A",
-    "img": "image_of_Spain.png",
+    "title": "Preguntas y respuestas",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/qa.svg",
     "description": "Responde una pregunta",
-    "color": "#19c37d",
+    "color": "#31273f",
     "sandboxHeader": "Responde una pregunta",
     "sampleResponse": "Portugal.",
     "tags": ["question-answering"],
@@ -335,10 +334,10 @@
                 }
             }
 },{
-    "title": "Palabras clave",
-    "img": "image_of_Picasso.png",
+    "title": "Generar palabras clave",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/keywords.svg",
     "description": "Palabras clave de un texto",
-    "color": "#19c37d",
+    "color": "#31273f",
     "sandboxHeader": "Palabras clave de un texto",
     "sampleResponse": "\n- Cubismo;\n- La vida;\n- La primera comunión",
     "tags": ["keywords-retrieval"],
@@ -353,9 +352,9 @@
             }
 },{
     "title": "Generar sinónimos",
-    "img": "no_idea.png",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/text.svg",
     "description": "",
-    "color": "#19c37d",
+    "color": "#31273f",
     "sandboxHeader": "Generar sinónimos de una palabra",
     "sampleResponse": "colosal, poderoso, soberbio.",
     "tags": ["text-generation"],
@@ -368,4 +367,68 @@
                 "p": 0.9
                 }
             }
+},{
+    "title": "Liste d'ingrédients",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/chatbot.svg",
+    "description": "Utilise Muse pour générer la liste des ingrédients utilisés dans une recette !",
+    "color": "#6816af",
+    "sandboxHeader": "Demande à Muse de gérer ta liste de courses !",
+    "sampleResponse": "1 kg de melon\n- 1 kg de framboises\n- 1 kg de bananes\n- 1 kg de yaourts",
+    "tags": ["text-generation"],
+    "model": "lyra-fr",
+    "request": {"text": "Fais une liste des ingrédients utilisés dans une recette donnée.\nRecette: 'Couper les melons en 2, ôter les graines et les évider avec une cuillère parisienne.\nMettre dans un saladier avec les framboises (en réserver quelques unes pour la décoration) et les bananes coupées en petits morceaux.\nIncorporer les yaourts et bien mélanger.\nRemplir les demi-melons avec la préparation et décorer éventuellement avec les framboises restantes.\nMettre au réfrigérateur 1 h et servir bien frais.'\nIngrédients:\n-",
+                "params": {
+                    "mode": "topk",
+                    "n_tokens": 25,
+                    "temperature": 0.5
+                    }
+                }
+},{
+    "title": "Recette de cuisine",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/chatbot.svg",
+    "description": "Muse peut te donner des idées de recettes à partir d'ingrédients !",
+    "color": "#6816af",
+    "sandboxHeader": "Laisse Muse te donner des idées de recettes !",
+    "sampleResponse": "Préparez le poulet. Coupez-le en cubes.\n2. Faites fondre le beurre et le poivron rouge dans une casserole.\n3. Ajoutez le poulet et faites cuire doucement.\n4. Ajoutez la crème et faites cuire",
+    "tags": ["text-generation"],
+    "model": "lyra-fr",
+    "request": {"text": "Je dispose des ingrédients suivants : des filets de poulet, de la crème, du beurre, 1 poivron rouge. \nJe veux les cuisiner.\nVoici la préparation :\n1.",
+                "params": {
+                    "mode": "topk",
+                    "n_tokens": 50,
+                    "temperature": 0.6
+                    }
+                }
+},{
+    "title": "Guide touristique",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/chatbot.svg",
+    "description": "Demande à Muse de te donner une liste de lieux à visiter lors de tes prochaines vacances !",
+    "color": "#6816af",
+    "sandboxHeader": "Muse - Guide touristique de l'année.",
+    "sampleResponse": "La Basilique Saint-Pierre\n- Le Colisée\n- Le Panthéon",
+    "tags": ["text-generation"],
+    "model": "lyra-fr",
+    "request": {"text": "Je vais à Rome. Voici 3 lieux à visiter :\n-",
+                "params": {
+                    "mode": "topk",
+                    "n_tokens": 15,
+                    "temperature": 0.6
+                    }
+                }
+},{
+    "title": "Coach sport et nutrition",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/chatbot.svg",
+    "description": "Muse peut te donner des conseils pour atteindre tes objectifs sportifs.",
+    "color": "#6816af",
+    "sandboxHeader": "Pas besoin d'un coach quand on a Muse !",
+    "sampleResponse": "Se fixer des objectifs clairs et réalisables\n- Avoir une bonne hygiène de vie\n- Ne pas hésiter à faire des exercices physiques\n- Prendre des compléments alimentaires",
+    "tags": ["text-generation"],
+    "model": "lyra-fr",
+    "request": {"text": "Comment gagner en force ?\nVoici quelques conseils :\n-",
+                "params": {
+                    "mode": "topk",
+                    "n_tokens": 32,
+                    "temperature": 0.8
+                    }
+                }
 }]
