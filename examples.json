@@ -431,4 +431,20 @@
                     "temperature": 0.8
                     }
                 }
+},{
+    "title": "Des accroches plus belles",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/qa.svg",
+    "description": "Muse peut embellir des accroches pour les rendre plus engageante.",
+    "color": "#6816af",
+    "sandboxHeader": "Laissez Muse vous inspirez pour vos accroches !",
+    "sampleResponse": "La mode éthique est la mode de l\'avenir. Nous vous aidons à trouver des vêtements éthiques en tissu organique certifié, fabriqués en Europe, durables et équitables.\"\n",
+    "tags": ["question-answering"],
+    "model": "lyra-fr",
+    "request": {"text": "Étant donnée une accroche, propose une version plus engageante.\n-----\nAccroche : \"Bienvenue sur notre boutique de chaussures.\"\nVersion plus engageante : \"Bienvenue dans le futur de la chaussure : nous offrons des chaussures confortables, tendances et à la mode.\"\n-----\nAccroche : \"Nous offrons l\'achat de matériel informatique.\"\nVersion plus engageante : \"Trouvez votre matériel informatique adapté à vos besoins chez le n°1 du high-tech !\"\n-----\nAccroche : \"Nous sommes une entreprise de textile qui conçoit des vêtements fabriqués à partir de coton biologique.\"\nVersion plus engageante : \"",
+                "params": {
+                    "mode": "nucleus",
+                    "n_tokens": 40,
+                    "temperature": 0.9
+                    }
+                }
 }]
