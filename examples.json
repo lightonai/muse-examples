@@ -16,6 +16,202 @@
                     }
                 }
 },{
+    "title": "Liste d'ingrédients",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/chatbot.svg",
+    "description": "Utilise Muse pour générer la liste des ingrédients utilisés dans une recette !",
+    "color": "#6816af",
+    "sandboxHeader": "Demande à Muse de gérer ta liste de courses !",
+    "sampleResponse": "1 kg de melon\n- 1 kg de framboises\n- 1 kg de bananes\n- 1 kg de yaourts",
+    "tags": ["text-generation"],
+    "model": "lyra-fr",
+    "request": {"text": "Fais une liste des ingrédients utilisés dans une recette donnée.\nRecette: 'Couper les melons en 2, ôter les graines et les évider avec une cuillère parisienne.\nMettre dans un saladier avec les framboises (en réserver quelques unes pour la décoration) et les bananes coupées en petits morceaux.\nIncorporer les yaourts et bien mélanger.\nRemplir les demi-melons avec la préparation et décorer éventuellement avec les framboises restantes.\nMettre au réfrigérateur 1 h et servir bien frais.'\nIngrédients:\n-",
+                "params": {
+                    "mode": "topk",
+                    "n_tokens": 25,
+                    "temperature": 0.5
+                    }
+                }
+},{
+    "title": "Recette de cuisine",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/chatbot.svg",
+    "description": "Muse peut te donner des idées de recettes à partir d'ingrédients !",
+    "color": "#6816af",
+    "sandboxHeader": "Laisse Muse te donner des idées de recettes !",
+    "sampleResponse": "Préparez le poulet. Coupez-le en cubes.\n2. Faites fondre le beurre et le poivron rouge dans une casserole.\n3. Ajoutez le poulet et faites cuire doucement.\n4. Ajoutez la crème et faites cuire",
+    "tags": ["text-generation"],
+    "model": "lyra-fr",
+    "request": {"text": "Je dispose des ingrédients suivants : des filets de poulet, de la crème, du beurre, 1 poivron rouge. \nJe veux les cuisiner.\nVoici la préparation :\n1.",
+                "params": {
+                    "mode": "topk",
+                    "n_tokens": 50,
+                    "temperature": 0.6
+                    }
+                }
+},{
+    "title": "Guide touristique",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/chatbot.svg",
+    "description": "Demande à Muse de te donner une liste de lieux à visiter lors de tes prochaines vacances !",
+    "color": "#6816af",
+    "sandboxHeader": "Muse - Guide touristique de l'année.",
+    "sampleResponse": "La Basilique Saint-Pierre\n- Le Colisée\n- Le Panthéon",
+    "tags": ["text-generation"],
+    "model": "lyra-fr",
+    "request": {"text": "Je vais à Rome. Voici 3 lieux à visiter :\n-",
+                "params": {
+                    "mode": "topk",
+                    "n_tokens": 15,
+                    "temperature": 0.6
+                    }
+                }
+},{
+    "title": "Coach sport et nutrition",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/chatbot.svg",
+    "description": "Muse peut te donner des conseils pour atteindre tes objectifs sportifs.",
+    "color": "#6816af",
+    "sandboxHeader": "Pas besoin d'un coach quand on a Muse !",
+    "sampleResponse": "Se fixer des objectifs clairs et réalisables\n- Avoir une bonne hygiène de vie\n- Ne pas hésiter à faire des exercices physiques\n- Prendre des compléments alimentaires",
+    "tags": ["text-generation"],
+    "model": "lyra-fr",
+    "request": {"text": "Comment gagner en force ?\nVoici quelques conseils :\n-",
+                "params": {
+                    "mode": "topk",
+                    "n_tokens": 32,
+                    "temperature": 0.8
+                    }
+                }
+},{
+    "title": "Des accroches plus belles",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/text.svg",
+    "description": "Muse peut embellir des accroches pour les rendre plus engageante.",
+    "color": "#6816af",
+    "sandboxHeader": "Laissez Muse vous inspirez pour vos accroches !",
+    "sampleResponse": "La mode éthique est la mode de l'avenir. Nous vous aidons à trouver des vêtements éthiques en tissu organique certifié, fabriqués en Europe, durables et équitables.\"\n",
+    "tags": ["text-generation"],
+    "model": "lyra-fr",
+    "request": {"text": "Étant donnée une accroche, propose une version plus engageante.\n-----\nAccroche : \"Bienvenue sur notre boutique de chaussures.\"\nVersion plus engageante : \"Bienvenue dans le futur de la chaussure : nous offrons des chaussures confortables, tendances et à la mode.\"\n-----\nAccroche : \"Nous offrons l'achat de matériel informatique.\"\nVersion plus engageante : \"Trouvez votre matériel informatique adapté à vos besoins chez le n°1 du high-tech !\"\n-----\nAccroche : \"Nous sommes une entreprise de textile qui conçoit des vêtements fabriqués à partir de coton biologique.\"\nVersion plus engageante : \"",
+                "params": {
+                    "mode": "nucleus",
+                    "n_tokens": 40,
+                    "temperature": 0.9
+                    }
+                }
+},{
+    "title": "Une classification détaillée",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/classification.svg",
+    "description": "Ajoutez des explications détaillant pourquoi un avis est plutôt négatif ou positif afin d'obtenir une classification encore plus pertinante.",
+    "color": "#6816af",
+    "sandboxHeader": "Expliquez avec Muse pourquoi un avis est positif ou négatif !",
+    "sampleResponse": "Ce client dit que le vin est \"décevant\" et qu'il manque d' \"intensité\" et de \"fruit\". Il exprime donc un avis négatif.",
+    "tags": ["sentiment-analysis"],
+    "model": "lyra-fr",
+    "request": {"text": "Détermine l'avis, positif ou négatif, exprimé par un commentaire client.\n----------\nCommentaire : 'Déçu, Pinot qui est en dessous de la moyenne, loin de ce que l'on peut attendre d'un petit Bourgogne.'\nCe client est \"déçu\" et dit que le vin est \"en dessous de la moyenne\". Il exprime donc un avis négatif.\n----------\nCommentaire : 'Ce vin présente un excellent rapport qualité prix. Arômes de fruits noirs, cassis, mûres. Il est plutôt rond et léger, finale douce avec note épicée. Je recommande vraiment.'\nCe client \"recommande\" ce vin et dit qu'il est un \"excellent rapport qualité prix\". Il exprime donc un avis positif.\n----------\nCommentaire : 'Il n'a pas de caractère, en le buvant on se demande où est le rosé, il fait un peu flotté et est trop fort en alcool. Je l'ai mal digéré. Déçue à mon niveau.'\nCe client dit être \"déçue\", et que le vin \"n'a pas de caractère\", qu'il est \"trop fort\" et \"mal digéré\". Il exprime donc un avis négatif.\n----------\nCommentaire : 'Vin facile. Prix imbattable . Ce n'est peut-être pas le rosé du siècle non plus, mais il est apprécié lors d'un apéritif ou une grillade.'\nCe client dit que le vin est \"apprécié\" et a un \"prix imbattable\". Il exprime donc un avis positif.\n----------\nCommentaire : 'J'aime les Viogniers mais je trouve celui un peu décevant ; un manque de parfum et de fruit si caractéristiques logiquement de ce cépage. Manque d'intensité également'\n",
+                "params": {
+                    "mode": "nucleus",
+                    "n_tokens": 36,
+                    "temperature": 0.1
+                    }
+                }
+},{
+    "title": "Nom d'une œuvre d'art",
+    "color": "#6816af",
+    "sandboxHeader": "Muse peut nommer des œuvres d'art !",
+    "sampleResponse": "L'oiseau de feu.",
+    "tags": ["text-generation"],
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/text.svg",
+    "description": "À partir de la description d'une œuvre, Muse peut générer des idées de noms.",
+    "model": "lyra-fr",
+    "request": {"text": "Génère un titre correspondant à la peinture décrite.\n***\nDescription: Au premier plan, il y a un arbre et derrière se trouve une ville de nuit avec un magnifique ciel rempli d’étoiles.\nTitre: La nuit étoilée.\n***\nDescription: On voit le portrait d'une jeune femme, sur fond d'un paysage montagneux aux horizons lointains et brumeux.\nTitre: La Joconde.\n***\nDescription: Il y a une très grande vague sur laquelle se trouve une barque et plein de petites vagues.\nTitre: La grande vague.\n***\nDescription: Quelques bateaux flottent sur l'eau avec, à l'horizon, un fond flou et un grand soleil rouge éclairant l'eau.\nTitre: ",
+                "params": {
+                    "mode": "nucleus",
+                    "n_tokens": 5,
+                    "p": 0.8,
+                    "temperature": 1.0
+                    }
+                }
+},{
+    "title": "Classification de critiques",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/classification.svg",
+    "description": "Classifiez des critiques de films avec Muse.",
+    "color": "#6816af",
+    "sandboxHeader": "Cette critique est-elle positive ou négative ? Muse le sait !",
+    "sampleResponse": "positive.",
+    "tags": ["sentiment-analysis"],
+    "model": "lyra-fr",
+    "request": {"text": "Détermine si ces critiques de film sont positives ou négatives.\n\nCritique: 'Un film touchant et riche en rebondissements.'\nCette critique est positive.\n----------\nCritique: 'Certaines répliques font vraiment rire, mais la mise en scène manque d'inventivité pour soutenir le rythme de la comédie.'\nCette critique est négative.\n----------\nCritique: 'La nullité du film dépasse à tous les niveaux ce que nous avions essayé de prévoir à travers les hallucinantes bandes-annonces diffusées sur le net.' \nCette critique est négative.\n----------\nCritique: 'Steven Spielberg, en misant sur l'authenticité, a signé un film qui frappe remarquablement juste.' \nCette critique est ",
+                "params": {
+                    "mode": "nucleus",
+                    "n_tokens": 2,
+                    "temperature": 0.1
+                    }
+                }
+},{
+    "title": "Questions et réponses",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/qa.svg",
+    "description": "Utilisez Muse pour répondre à des questions de culture générale.",
+    "color": "#6816af",
+    "sandboxHeader": "Une question de culture générale ? Demandez à Muse la réponse !",
+    "sampleResponse": "La datation par le carbone 14 est une méthode de datation radiométrique. Le carbone 14 est un isotope radioactif du carbone. Il est utilisé pour dater les objets archéologiques, les restes d'animaux et les sédiments",
+    "tags": ["question-answering"],
+    "model": "lyra-fr",
+    "request": {"text": "Question: Qu'est-ce que la datation par le carbone 14 ?\nRéponse:",
+                "params": {
+                    "mode": "topk",
+                    "n_tokens": 45,
+                    "temperature": 0.6
+                    }
+                }
+},{
+    "title": "Extraction de mots-clés",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/keywords.svg",
+    "description": "Muse peut extraire les mots-clés d'un article.",
+    "color": "#6816af",
+    "sandboxHeader": "Besoin de mots-clés pour trier des documents ? Utilisez Muse !",
+    "sampleResponse": "Corium, fusion nucléaire, réacteur nucléaire, combustible",
+    "tags": ["keywords-retrieval"],
+    "model": "lyra-fr",
+    "request": {"text": "Extrais les mots clés de l'article suivant: Le corium est un magma métallique et minéral constitué d'éléments fondus du cœur d'un réacteur nucléaire, puis des minéraux qu'il peut absorber lors de son trajet.  Le terme « corium » est un néologisme formé de core (en anglais, pour le cœur d'un réacteur nucléaire), suivi du suffixe -ium présent dans le nom de nombreux éléments du tableau périodique des éléments : lithium, calcium, uranium, plutonium, hélium, strontium, etc.  Initialement constitué du combustible nucléaire (principalement de l'oxyde d'uranium enrichi), des éléments de l'assemblage combustible et des divers équipements du cœur (barres de contrôle, instrumentation) ou de la paroi de la cuve du réacteur avec lesquels il entre en contact, il se forme à très haute température (environ 3 000 °C, température de fusion de l'oxyde d'uranium) quand le cœur n'est plus refroidi, comme lors d'accidents nucléaires tels ceux de Three Mile Island, de Tchernobyl, ou de Fukushima.\n\nMots-clés:",
+                "params": {
+                    "mode": "topk",
+                    "k": 5,
+                    "n_tokens": 10,
+                    "temperature": 0.8,
+                    "presence_penalty": 1.0
+                    }
+                }
+},{
+    "title": "Génération d'idées d'articles",
+    "color": "#6816af",
+    "sandboxHeader": "En manque d'inspiration ? Muse peut donner des idées !",
+    "sampleResponse": "L'aquarelle entre peinture et poésie\n- Aquarelle et nature\n- L'aquarelle en vidéo\n- Les techniques et artistes\n- Les peintres aquarellistes\n",
+    "tags": ["text-generation"],
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/text.svg",
+    "description": "Utilisez Muse pour générer une liste d'idées d'articles sur un sujet donné.",
+    "model": "lyra-fr",
+    "request": {"text": "Génère une liste d'idées d'articles sur l'aquarelle.\n\n- L'aquarelle dans l'histoire\n- ",
+                "params": {
+                    "mode": "topk",
+                    "n_tokens": 40,
+                    "temperature": 1.0
+                    }
+                }
+},{
+    "title": "Répondez à des commentaires clients",
+    "color": "#6816af",
+    "sandboxHeader": "Répondez à des commentaires clients avec Muse !",
+    "sampleResponse": "Merci à vous pour ce compliment ! Nous espérons que nous aurons le plaisir de vous y revoir bientôt.",
+    "tags": ["text-generation"],
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/chatbot.svg",
+    "description": "Utilisez Muse pour répondre à des commentaires clients.",
+    "model": "lyra-fr",
+    "request": {"text": "Réponds aux avis clients suivants.\n***\nAvis: Ça fait plusieurs fois que je viens et je n’ai jamais été déçue. L’accueil est chaleureux, les pizzas sont juste parfaites. J’ai enfin goûté un dessert et il était largement à la hauteur du reste ! Bref, au top, j’y retournerai bientôt !\nRéponse: Wow, nous sommes très touchés par votre commentaire ! Un grand merci à vous et à très bientôt !\n***\nAvis: Décevant surtout au vu de la bonne note du resto, je m'attendais à me régaler mais pas vraiment. Le tiramisu, certes bien garni, était très liquide, on aurait dit que c'était mélangé avec de l'eau, et pas très bon. \nRéponse: Nous sommes désolés de ne pas avoir répondu à vos attentes. Nous espérons que vous nous donnerez une autre chance bientôt.\n***\nAvis: Super pizzeria ! Accueil sympathique. On y va souvent mais on ne s'en lasse pas !\nRéponse:",
+                "params": {
+                    "mode": "topk",
+                    "n_tokens": 20,
+                    "p": 0.9,
+                    "temperature": 0.8
+                    }
+                }
+},{
     "title": "Eve, the Python Chatbot",
     "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/chatbot.svg",
     "description": "Get help with Python from the chatbot Eve.",
@@ -166,106 +362,6 @@
                     }
                 }
 },{
-    "title": "Nom d'une œuvre d'art",
-    "color": "#6816af",
-    "sandboxHeader": "Muse peut nommer des œuvres d'art !",
-    "sampleResponse": "L'oiseau de feu.",
-    "tags": ["text-generation"],
-    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/text.svg",
-    "description": "À partir de la description d'une œuvre, Muse peut générer des idées de noms.",
-    "model": "lyra-fr",
-    "request": {"text": "Génère un titre correspondant à la peinture décrite.\n***\nDescription: Au premier plan, il y a un arbre et derrière se trouve une ville de nuit avec un magnifique ciel rempli d’étoiles.\nTitre: La nuit étoilée.\n***\nDescription: On voit le portrait d'une jeune femme, sur fond d'un paysage montagneux aux horizons lointains et brumeux.\nTitre: La Joconde.\n***\nDescription: Il y a une très grande vague sur laquelle se trouve une barque et plein de petites vagues.\nTitre: La grande vague.\n***\nDescription: Quelques bateaux flottent sur l'eau avec, à l'horizon, un fond flou et un grand soleil rouge éclairant l'eau.\nTitre: ",
-                "params": {
-                    "mode": "nucleus",
-                    "n_tokens": 5,
-                    "p": 0.8,
-                    "temperature": 1.0
-                    }
-                }
-},{
-    "title": "Classification de critiques",
-    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/classification.svg",
-    "description": "Classifiez des critiques de films avec Muse.",
-    "color": "#6816af",
-    "sandboxHeader": "Cette critique est-elle positive ou négative ? Muse le sait !",
-    "sampleResponse": "positive.",
-    "tags": ["sentiment-analysis"],
-    "model": "lyra-fr",
-    "request": {"text": "Détermine si ces critiques de film sont positives ou négatives.\n\nCritique: 'Un film touchant et riche en rebondissements.'\nCette critique est positive.\n----------\nCritique: 'Certaines répliques font vraiment rire, mais la mise en scène manque d'inventivité pour soutenir le rythme de la comédie.'\nCette critique est négative.\n----------\nCritique: 'La nullité du film dépasse à tous les niveaux ce que nous avions essayé de prévoir à travers les hallucinantes bandes-annonces diffusées sur le net.' \nCette critique est négative.\n----------\nCritique: 'Steven Spielberg, en misant sur l'authenticité, a signé un film qui frappe remarquablement juste.' \nCette critique est ",
-                "params": {
-                    "mode": "nucleus",
-                    "n_tokens": 2,
-                    "temperature": 0.1
-                    }
-                }
-},{
-    "title": "Questions et réponses",
-    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/qa.svg",
-    "description": "Utilisez Muse pour répondre à des questions de culture générale.",
-    "color": "#6816af",
-    "sandboxHeader": "Une question de culture générale ? Demandez à Muse la réponse !",
-    "sampleResponse": "La datation par le carbone 14 est une méthode de datation radiométrique. Le carbone 14 est un isotope radioactif du carbone. Il est utilisé pour dater les objets archéologiques, les restes d'animaux et les sédiments",
-    "tags": ["question-answering"],
-    "model": "lyra-fr",
-    "request": {"text": "Question: Qu'est-ce que la datation par le carbone 14 ?\nRéponse:",
-                "params": {
-                    "mode": "topk",
-                    "n_tokens": 45,
-                    "temperature": 0.6
-                    }
-                }
-},{
-    "title": "Extraction de mots-clés",
-    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/keywords.svg",
-    "description": "Muse peut extraire les mots-clés d'un article.",
-    "color": "#6816af",
-    "sandboxHeader": "Besoin de mots-clés pour trier des documents ? Utilisez Muse !",
-    "sampleResponse": "Corium, fusion nucléaire, réacteur nucléaire, combustible",
-    "tags": ["keywords-retrieval"],
-    "model": "lyra-fr",
-    "request": {"text": "Extrais les mots clés de l'article suivant: Le corium est un magma métallique et minéral constitué d'éléments fondus du cœur d'un réacteur nucléaire, puis des minéraux qu'il peut absorber lors de son trajet.  Le terme \"corium\" est un néologisme formé de core (en anglais, pour le cœur d'un réacteur nucléaire), suivi du suffixe -ium présent dans le nom de nombreux éléments du tableau périodique des éléments : lithium, calcium, uranium, plutonium, hélium, strontium, etc.  Initialement constitué du combustible nucléaire (principalement de l'oxyde d'uranium enrichi), des éléments de l'assemblage combustible et des divers équipements du cœur (barres de contrôle, instrumentation) ou de la paroi de la cuve du réacteur avec lesquels il entre en contact, il se forme à très haute température (environ 3 000 °C, température de fusion de l'oxyde d'uranium) quand le cœur n'est plus refroidi, comme lors d'accidents nucléaires tels ceux de Three Mile Island, de Tchernobyl, ou de Fukushima.\n\nMots-clés:",
-                "params": {
-                    "mode": "topk",
-                    "k": 5,
-                    "n_tokens": 10,
-                    "temperature": 0.8,
-                    "presence_penalty": 1.0
-                    }
-                }
-},{
-    "title": "Génération d'idées d'articles",
-    "color": "#6816af",
-    "sandboxHeader": "En manque d'inspiration ? Muse peut donner des idées !",
-    "sampleResponse": "L'aquarelle entre peinture et poésie\n- Aquarelle et nature\n- L'aquarelle en vidéo\n- Les techniques et artistes\n- Les peintres aquarellistes\n",
-    "tags": ["text-generation"],
-    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/text.svg",
-    "description": "Utilisez Muse pour générer une liste d'idées d'articles sur un sujet donné.",
-    "model": "lyra-fr",
-    "request": {"text": "Génère une liste d'idées d'articles sur l'aquarelle.\n\n- L'aquarelle dans l'histoire\n- ",
-                "params": {
-                    "mode": "topk",
-                    "n_tokens": 40,
-                    "temperature": 1.0
-                    }
-                }
-},{
-    "title": "Répondez à des commentaires clients",
-    "color": "#6816af",
-    "sandboxHeader": "Répondez à des commentaires clients avec Muse !",
-    "sampleResponse": "Merci à vous pour ce compliment ! Nous espérons que nous aurons le plaisir de vous y revoir bientôt.",
-    "tags": ["text-generation"],
-    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/chatbot.svg",
-    "description": "Utilisez Muse pour répondre à des commentaires clients.",
-    "model": "lyra-fr",
-    "request": {"text": "Réponds aux avis clients suivants.\n***\nAvis: Ça fait plusieurs fois que je viens et je n’ai jamais été déçue. L’accueil est chaleureux, les pizzas sont juste parfaites. J’ai enfin goûté un dessert et il était largement à la hauteur du reste ! Bref, au top, j’y retournerai bientôt !\nRéponse: Wow, nous sommes très touchés par votre commentaire ! Un grand merci à vous et à très bientôt !\n***\nAvis: Décevant surtout au vu de la bonne note du resto, je m'attendais à me régaler mais pas vraiment. Le tiramisu, certes bien garni, était très liquide, on aurait dit que c'était mélangé avec de l'eau, et pas très bon. \nRéponse: Nous sommes désolés de ne pas avoir répondu à vos attentes. Nous espérons que vous nous donnerez une autre chance bientôt.\n***\nAvis: Super pizzeria ! Accueil sympathique. On y va souvent mais on ne s'en lasse pas !\nRéponse:",
-                "params": {
-                    "mode": "topk",
-                    "n_tokens": 20,
-                    "p": 0.9,
-                    "temperature": 0.8
-                    }
-                }
-},{
     "title": "Classificatore di recensioni",
     "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/classification.svg",
     "description": "Un esempio su recensioni di libri",
@@ -367,100 +463,4 @@
                 "p": 0.9
                 }
             }
-},{
-    "title": "Liste d'ingrédients",
-    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/chatbot.svg",
-    "description": "Utilise Muse pour générer la liste des ingrédients utilisés dans une recette !",
-    "color": "#6816af",
-    "sandboxHeader": "Demande à Muse de gérer ta liste de courses !",
-    "sampleResponse": "1 kg de melon\n- 1 kg de framboises\n- 1 kg de bananes\n- 1 kg de yaourts",
-    "tags": ["text-generation"],
-    "model": "lyra-fr",
-    "request": {"text": "Fais une liste des ingrédients utilisés dans une recette donnée.\nRecette: 'Couper les melons en 2, ôter les graines et les évider avec une cuillère parisienne.\nMettre dans un saladier avec les framboises (en réserver quelques unes pour la décoration) et les bananes coupées en petits morceaux.\nIncorporer les yaourts et bien mélanger.\nRemplir les demi-melons avec la préparation et décorer éventuellement avec les framboises restantes.\nMettre au réfrigérateur 1 h et servir bien frais.'\nIngrédients:\n-",
-                "params": {
-                    "mode": "topk",
-                    "n_tokens": 25,
-                    "temperature": 0.5
-                    }
-                }
-},{
-    "title": "Recette de cuisine",
-    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/chatbot.svg",
-    "description": "Muse peut te donner des idées de recettes à partir d'ingrédients !",
-    "color": "#6816af",
-    "sandboxHeader": "Laisse Muse te donner des idées de recettes !",
-    "sampleResponse": "Préparez le poulet. Coupez-le en cubes.\n2. Faites fondre le beurre et le poivron rouge dans une casserole.\n3. Ajoutez le poulet et faites cuire doucement.\n4. Ajoutez la crème et faites cuire",
-    "tags": ["text-generation"],
-    "model": "lyra-fr",
-    "request": {"text": "Je dispose des ingrédients suivants : des filets de poulet, de la crème, du beurre, 1 poivron rouge. \nJe veux les cuisiner.\nVoici la préparation :\n1.",
-                "params": {
-                    "mode": "topk",
-                    "n_tokens": 50,
-                    "temperature": 0.6
-                    }
-                }
-},{
-    "title": "Guide touristique",
-    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/chatbot.svg",
-    "description": "Demande à Muse de te donner une liste de lieux à visiter lors de tes prochaines vacances !",
-    "color": "#6816af",
-    "sandboxHeader": "Muse - Guide touristique de l'année.",
-    "sampleResponse": "La Basilique Saint-Pierre\n- Le Colisée\n- Le Panthéon",
-    "tags": ["text-generation"],
-    "model": "lyra-fr",
-    "request": {"text": "Je vais à Rome. Voici 3 lieux à visiter :\n-",
-                "params": {
-                    "mode": "topk",
-                    "n_tokens": 15,
-                    "temperature": 0.6
-                    }
-                }
-},{
-    "title": "Coach sport et nutrition",
-    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/chatbot.svg",
-    "description": "Muse peut te donner des conseils pour atteindre tes objectifs sportifs.",
-    "color": "#6816af",
-    "sandboxHeader": "Pas besoin d'un coach quand on a Muse !",
-    "sampleResponse": "Se fixer des objectifs clairs et réalisables\n- Avoir une bonne hygiène de vie\n- Ne pas hésiter à faire des exercices physiques\n- Prendre des compléments alimentaires",
-    "tags": ["text-generation"],
-    "model": "lyra-fr",
-    "request": {"text": "Comment gagner en force ?\nVoici quelques conseils :\n-",
-                "params": {
-                    "mode": "topk",
-                    "n_tokens": 32,
-                    "temperature": 0.8
-                    }
-                }
-},{
-    "title": "Des accroches plus belles",
-    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/text.svg",
-    "description": "Muse peut embellir des accroches pour les rendre plus engageante.",
-    "color": "#6816af",
-    "sandboxHeader": "Laissez Muse vous inspirez pour vos accroches !",
-    "sampleResponse": "La mode éthique est la mode de l'avenir. Nous vous aidons à trouver des vêtements éthiques en tissu organique certifié, fabriqués en Europe, durables et équitables.\"\n",
-    "tags": ["text-generation"],
-    "model": "lyra-fr",
-    "request": {"text": "Étant donnée une accroche, propose une version plus engageante.\n-----\nAccroche : \"Bienvenue sur notre boutique de chaussures.\"\nVersion plus engageante : \"Bienvenue dans le futur de la chaussure : nous offrons des chaussures confortables, tendances et à la mode.\"\n-----\nAccroche : \"Nous offrons l'achat de matériel informatique.\"\nVersion plus engageante : \"Trouvez votre matériel informatique adapté à vos besoins chez le n°1 du high-tech !\"\n-----\nAccroche : \"Nous sommes une entreprise de textile qui conçoit des vêtements fabriqués à partir de coton biologique.\"\nVersion plus engageante : \"",
-                "params": {
-                    "mode": "nucleus",
-                    "n_tokens": 40,
-                    "temperature": 0.9
-                    }
-                }
-},{
-    "title": "Une classification détaillée",
-    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/classification.svg",
-    "description": "Ajoutez des explications détaillant pourquoi un avis est plutôt négatif ou positif afin d'obtenir une classification encore plus pertinante.",
-    "color": "#6816af",
-    "sandboxHeader": "Expliquez avec Muse pourquoi un avis est positif ou négatif !",
-    "sampleResponse": "Ce client dit que le vin est \"décevant\" et qu'il manque d' \"intensité\" et de \"fruit\". Il exprime donc un avis négatif.",
-    "tags": ["sentiment-analysis"],
-    "model": "lyra-fr",
-    "request": {"text": "Détermine l'avis, positif ou négatif, exprimé par un commentaire client.\n----------\nCommentaire : 'Déçu, Pinot qui est en dessous de la moyenne, loin de ce que l'on peut attendre d'un petit Bourgogne.'\nCe client est \"déçu\" et dit que le vin est \"en dessous de la moyenne\". Il exprime donc un avis négatif.\n----------\nCommentaire : 'Ce vin présente un excellent rapport qualité prix. Arômes de fruits noirs, cassis, mûres. Il est plutôt rond et léger, finale douce avec note épicée. Je recommande vraiment.'\nCe client \"recommande\" ce vin et dit qu'il est un \"excellent rapport qualité prix\". Il exprime donc un avis positif.\n----------\nCommentaire : 'Il n'a pas de caractère, en le buvant on se demande où est le rosé, il fait un peu flotté et est trop fort en alcool. Je l'ai mal digéré. Déçue à mon niveau.'\nCe client dit être \"déçue\", et que le vin \"n'a pas de caractère\", qu'il est \"trop fort\" et \"mal digéré\". Il exprime donc un avis négatif.\n----------\nCommentaire : 'Vin facile. Prix imbattable . Ce n'est peut-être pas le rosé du siècle non plus, mais il est apprécié lors d'un apéritif ou une grillade.'\nCe client dit que le vin est \"apprécié\" et a un \"prix imbattable\". Il exprime donc un avis positif.\n----------\nCommentaire : 'J'aime les Viogniers mais je trouve celui un peu décevant ; un manque de parfum et de fruit si caractéristiques logiquement de ce cépage. Manque d'intensité également'\n",
-                "params": {
-                    "mode": "nucleus",
-                    "n_tokens": 36,
-                    "temperature": 0.1
-                    }
-                }
 }]
