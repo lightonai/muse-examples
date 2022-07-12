@@ -400,7 +400,7 @@
     "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/keywords.svg",
     "description": "Estrarre parole chiavi da un testo",
     "color": "#a58efa",
-    "sandboxHeader": "Le Alpi",
+    "sandboxHeader": "Estrarre parole chiavi da un testo",
     "sampleResponse": "\n- Europa;\n- Italia;\n- Francia;\n- Svizzera;\n- Austria;",
     "tags": ["keywords-retrieval"],
     "model": "auriga-it",
@@ -449,7 +449,7 @@
 },{
     "title": "Generar sinónimos",
     "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/text.svg",
-    "description": "",
+    "description": "Generar sinónimos de una palabra",
     "color": "#31273f",
     "sandboxHeader": "Generar sinónimos de una palabra",
     "sampleResponse": "colosal, poderoso, soberbio.",
