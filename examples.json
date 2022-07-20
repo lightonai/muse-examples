@@ -1,21 +1,4 @@
 [{
-    "title": "Inspiration de Proust",
-    "color": "#6816af",
-    "sandboxHeader": "Muse peut s'inspirer de Marcel Proust !",
-    "sampleResponse": ", mais seulement le dernier d'un monde qui avait déjà fait son temps. Le traîneau s'arrêta devant la porte de l'hôtel. Je sautai à terre et pénétrai dans le hall où quelques pensionnaires lisaient des journaux.",
-    "tags": ["text-generation"],
-    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/text.svg",
-    "description": "Écrivez dans de style d'un des auteurs les plus influents du XXe siècle.",
-    "model": "lyra-fr",
-    "request": {"text": "C'était un temps que je connaissais ; j'eus la sensation et le pressentiment que le jour de l'An n'était pas un jour différent des autres, qu'il n'était pas le premier d'un monde nouveau",
-                "params": {
-                    "mode": "nucleus",
-                    "n_tokens": 50,
-                    "p": 0.8,
-                    "temperature": 1.0
-                    }
-                }
-},{
     "title": "Liste d'ingrédients",
     "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/chatbot.svg",
     "description": "Utilise Muse pour générer la liste des ingrédients utilisés dans une recette !",
