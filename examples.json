@@ -195,6 +195,64 @@
                     }
                 }
 },{
+    "title": "Advertising",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/text.svg",
+    "description": "Write ads that go to the point",
+    "color": "#6816af",
+    "sandboxHeader": "Ads that write themselves",
+    "sampleResponse": "Visit Atmosphere\n\nAtmosphere has just opened its doors and is now ready to offer an unparalleled experience in luxurious, private villas. While the resort’s restaurant is world-class, the real star of the show is undoubtedly its stunning scuba diving. And it’s not only scuba divers who are in love with the place. With more than 60 underwater attractions, including a sunken shipwreck and a natural coral reef, Atmosphere is one of the best scuba destinations in Asia.",
+    "tags": ["chattextbot"],
+    "model": "lyra-en",
+    "request": {"text": "An Instagram ad for Atmosphere resort, a luxury hotel on Apo island in the Philippines with world-class diving.\n\nInstagram Ad:",
+                "params": {
+                    "mode": "nucleus",
+                    "n_tokens": 105,
+                    "p": 0.9,
+                    "temperature": 0.8,
+                    "seed": 0,
+                    "word_biases": {"luxury": 5, "scuba": 5},
+                    "frequency_penalty": 0.7
+                    }
+                }
+},{
+    "title": "Product Description",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/text.svg",
+    "description": "Generate product descriptions for your marketplace",
+    "color": "#6816af",
+    "sandboxHeader": "Generate product descriptions for your marketplace",
+    "sampleResponse": "The Milwaukee M18 Compact Percussion Drill with 2 x 4 Amp Batteries and Charger is the ultimate tool for any DIY or tradesman. With a powerful high-speed rotary motor, this drill can drill through concrete, masonry and steel. It’s also equipped with a standard 2-speed trigger, a convenient LED work light and a convenient storage compartment.",
+    "tags": ["chattextbot"],
+    "model": "lyra-en",
+    "request": {"text": "Describe the following car parts and tools.\n*****\nProduct: Top Tech 1800W Pressure Washer with Integrated Hose Reel 120 Bar\nDescription: The Top Tech 1800W Pressure washer with Integrated Hose Reel is ideal for a range of jobs, from cleaning your vehicle to patios, decking and BBQs. With a powerful 1800W air-cooled motor producing up to 120 bar of pressure, and a built-in stop-start system, the unit also comes with 5m high pressure hose and hose reel for easy and tidy use.\n*****\nProduct: Milwaukee M18 Compact Percussion Drill with 2 x 4 Amp Batteries and Charger \nDescription:",
+                "params": {
+                    "mode": "nucleus",
+                    "n_tokens": 100,
+                    "p": 0.9,
+                    "temperature": 0.8,
+                    "seed": 0,
+                    "stop_words": ["\n"]
+                    }
+                }
+},{
+    "title": "Automated Review Answering",
+    "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/chatbot.svg",
+    "description": "Answer client reviews efficiently.",
+    "color": "#70c5eb",
+    "sandboxHeader": "Prompt answers for your customers.",
+    "sampleResponse": "Thank you for your kind words! We are glad you liked the ambiance and we look forward to seeing you again.",
+    "tags": ["chattextbot"],
+    "model": "lyra-en",
+    "request": {"text": "Answer the following client reviews.\n\n###\n\nReview: Really innovative and cool vibe. Cocktails are unusual sounding, but great tasting. We loved the service too, not at all pretentious, friendly and attentive. We’ll be back!\nAnswer: Thank you for your positive review! We hope to see you again soon :).\n\n###\n\nReview: Great atmosphere. Poor service and drinks.  Waited 45 minutes for our drinks.  The mojito was like Sprite with mint garnish.  They didn’t seem to care.  For a bar based on cocktails, super poor.  Expensive and overrated.  Go elsewhere\nAnswer: We are sorry we didn't meet your expectations, and that you had to wait for so long. We hope you give us another chance soon.\n\n###\n\nReview: I like this bar. The deco, the staff and the little bit of a mystery in finding it all adds up to a positive experience.\nAnswer:",
+                "params": {
+                    "mode": "nucleus",
+                    "n_tokens": 25,
+                    "p": 0.9,
+                    "temperature": 0.8,
+                    "seed": 0,
+                    "stop_words": ["\n"]
+                    }
+                }
+},{
     "title": "Eve, the Python Chatbot",
     "img": "https://raw.githubusercontent.com/lightonai/muse-examples/master/assets/chatbot.svg",
     "description": "Get help with Python from the chatbot Eve.",
@@ -236,11 +294,12 @@
     "sampleResponse": "Search, Internet",
     "tags": ["sentiment-analysis"],
     "model": "lyra-en",
-    "request": {"text": "The following is a list of companies and the categories they fall into\n\nMeta: Social media, Virtual Reality\nLinkedIn: Social media, Careers\nDeliveroo: Logistics, Food, Marketplace\nUber: Transportation, Marketplace\nUnilever: Conglomerate, Consumer Goods\nMcDonalds: Fast Food, Restaurants\nGoogle:",
+    "request": {"text": "The following is a list of companies and the categories they fall into\n\nMeta: Social media, Virtual Reality\nLinkedIn: Social media, Careers\nDeliveroo: Logistics, Food, Marketplace\nUber: Transportation, Marketplace\nUnilever: Conglomerate, Consumer Goods\nMcDonalds: Fast Food, Restaurants\nCaterpillar:",
                 "params": {
                     "mode": "nucleus",
                     "n_tokens": 15,
-                    "temperature": 0.3
+                    "temperature": 0.3,
+                    "stop_words": [".", "!", "...", "\n\n", "\n"]
                     }
                 }
 },{
