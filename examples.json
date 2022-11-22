@@ -309,7 +309,7 @@
     "uuid": "1-en",
     "color": "#70c5eb",
     "sandboxHeader": "Muse understands what you want. Just ask for it!",
-    "sampleResponse": "Search, Internet",
+    "sampleResponse": "Construction, Manufacturing",
     "tags": ["sentiment-analysis"],
     "model": "lyra-en",
     "request": {"text": "The following is a list of companies and the categories they fall into\n\nMeta: Social media, Virtual Reality\nLinkedIn: Social media, Careers\nDeliveroo: Logistics, Food, Marketplace\nUber: Transportation, Marketplace\nUnilever: Conglomerate, Consumer Goods\nMcDonalds: Fast Food, Restaurants\nCaterpillar:",
